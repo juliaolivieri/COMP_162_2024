@@ -73,7 +73,9 @@ y <- c(-2, 4, 9, 0)
 x + y
 ```
 
-## Exploring R Studio
+## Part 1
+
+### Exploring R Studio
 1. **(CW) Create a new R script file, and save it as classwork6.R. You will submit this file for the "classwork 6" assignment.**
 1. **(CW) Add a comment to the beginning of your script by using #. What happens when you try to run this line of code? I recommend including comments throughout this classwork to 1. help you remember what you did.**
 1. Evaluate the mathematical expression (400/20) + 22 in the console. Then add it to your script file, and evaluate it there. Is there a difference? Which is preferrable?
@@ -82,7 +84,7 @@ x + y
 1. At the bottom of the documentation you should see some lines of code starting with require(stats); require(graphics) and ending with  identical(n0, pmax(n0, 4))). Copy these lines of code into your script, highlight them, and press "Run." Do you see a plot appear in the "Plots" pane?
 1. After running this code, some objects should appear in the "Environment" RStudio pane. This is where you will see all the objects you have defined in your session.
 
-## Mathematical Operations in R
+### Mathematical Operations in R
 1. **(CW) One of the most basic uses of R is as a calculator. Write down a line of code in your script to calculate the number of seconds in a year. Include a comment above it to keep track of what you were trying to calculate.**
 1. Use the %% operator to check whether the following number is even: (3.2^2) %/% 2
 1. Use > to check whether sqrt(3) is greater than log(3).
@@ -90,7 +92,7 @@ x + y
 1. R has the value of pi encoded in this variable: Try executing pi in your R script.
 1. (Challenge) A penny has a diameter of 0.750 mm. A quarter has a diameter of 24.26 mm. Calculate the difference in the areas of a quarter and a penny. Remember, the area of a circle is equal to $\pi (radius)^2$, and $radius = diameter/2$.
 
-## Assigning/printing variables
+### Assigning/printing variables
 1. **(CW) Assign a variable to var1 with the result of 5 different mathematical operations/functions, e.g. floor((27 - 3) %% 5) + ceiling(-5.9)^2.**
 1. Assign a variable var2 to a different result of mathematical operations/functions.
 1. Assign a third variable to the result of var1 == var2.
@@ -100,13 +102,15 @@ x + y
 1. Print each variable.
 1. (Challenge) Redo question 7 from the section "Mathematical Operations in R", but this time assign a variable for the diameter of a quarter, a variable for the diameter of a penny, a variable for the area of a quarter, a variable for the area of a penny, and a variable for the difference in area of the two.
 
-## Variable types
+### Variable types
 1. **(CW) Check the types of five of the variables that you have defined in your script so far using the str() function, e.g. str(var1).**
 1. Assign a variable var6 to 5, and a variable var7 to 5L.
 1. Check the types of these two variables.
 1. Check whether these two variables are equal.
 1. Assign var8 to "5". What type is this variable?
 1. Is var8 equal to var6?
+
+## Part 2
 
 ### Creating vectors
 
