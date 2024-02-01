@@ -99,7 +99,15 @@ x + y
 1. Check whether var4 is equal to var5 using ==.
 1. Print each variable.
 1. (Challenge) Redo question 7 from the section "Mathematical Operations in R", but this time assign a variable for the diameter of a quarter, a variable for the diameter of a penny, a variable for the area of a quarter, a variable for the area of a penny, and a variable for the difference in area of the two.
-  
+
+## Variable types
+1. **(CW) Check the types of five of the variables that you have defined in your script so far using the str() function, e.g. str(var1).**
+1. Assign a variable var6 to 5, and a variable var7 to 5L.
+1. Check the types of these two variables.
+1. Check whether these two variables are equal.
+1. Assign var8 to "5". What type is this variable?
+1. Is var8 equal to var6?
+
 ## Vectors
 * Create a vector by combining a numeric, logical, and character element (e.g. `c(5, TRUE, "tiger")`)
 * Use the `str()` function to check the type of the resulting vector.
