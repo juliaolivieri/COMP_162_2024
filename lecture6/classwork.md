@@ -139,7 +139,7 @@ Remember, R indexing starts at 1. We use brackets to index into a vector.
 1. Find the sum of all values of `var12` using the `sum()` function, e.g. `sum(var12)`.
 1. Find the sum of the squares of all values of `var12`.
 1. Subtract 1 from every entry of `var10`.
-1. Copy the following vectors into your script (they now have more data than last week):
+1. Copy the following vectors into your script:
 ```
 tesla_price <- c(131.49, 128.78, 127.17, 133.42, 143.75, 143.89, 144.43, 160.27, 177.9, 166.66, 173.22, 181.41, 188.27, 189.98)
 apple_price <- c(135.94, 135.21, 135.27, 137.87, 141.11, 142.53, 141.86, 143.96, 145.93, 143, 144.29, 145.43, 150.82, 154.5)
