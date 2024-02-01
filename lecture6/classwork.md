@@ -1,7 +1,7 @@
 # Classwork 6
 
 1.
-A. Open a new R script.
+  1. Open a new R script.
 A. Assign a variable `var1` to the result of five different mathematical operations (e.g. `(5*10 %/% -3)^2 + 10/0.5`)
 A. Assign a variable `var2` to the result of a combination of mathematical operations and functions (e.g. `abs(89 %% 5) + sqrt(log(95))`)
 A. Assign a third variable `var3` to `var1 > var2`.
