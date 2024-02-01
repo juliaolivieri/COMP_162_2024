@@ -73,7 +73,7 @@ y <- c(-2, 4, 9, 0)
 x + y
 ```
 
-## Part 1
+## Part 1: R Basics
 
 ### Exploring R Studio
 1. **(CW) Create a new R script file, and save it as classwork6.R. You will submit this file for the "classwork 6" assignment.**
@@ -111,7 +111,7 @@ x + y
 1. Assign var8 to "5". What type is this variable?
 1. Is var8 equal to var6?
 
-## Part 2
+## Part 2: Vectors
 
 ### Creating vectors
 
@@ -153,7 +153,7 @@ date <- c("Jan17", "Jan18", "Jan19", "Jan20", "Jan23", "Jan24", "Jan25", "Jan26"
 1. (Challenge) We will not be focusing on some of the other basic functionality of R in this class, such as for loops and function definitions. However, you can look up the syntax of for loops (https://www.w3schools.com/r/r_for_loop.asp) and functions (https://www.w3schools.com/r/r_functions.asp) and test them out for yourself.
 1. (Challenge) Use a loop to write a function num.odd(v) that returns how many odd numbers there are in the vector v. Then, write a function num.odd2(v) that does the same thing without using a loop.
 
-## Data Frames
+## Part 3: Data Frames
 
 ### Creating data frames
 
