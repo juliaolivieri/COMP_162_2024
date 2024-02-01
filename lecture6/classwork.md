@@ -2,3 +2,9 @@
 
 1. Open a new R script.
 * Assign a variable `var1` to the result of five different mathematical operations (e.g. `(5*10 %/% -3)^2 + 10/0.5`)
+* Assign a variable `var2` to the result of a combination of mathematical operations and functions (e.g. `abs(89 %% 5) + sqrt(log(95))`)
+* Assign a third variable `var3` to `var1 > var2`.
+* Print each variable. Is `var1 > var2`?
+* Check the type of each variable using the `str()` function (e.g. `str(var1)`)
+* Which variable types are missing? Try assign variables to these types, and check with the `str()` function
+* *(Challenge - not required)* Define variables `X1`, `X2`, `t`, `s1`, `s2`, `n1`, `n2`. Set them equal to quantitative values of your own choosing. 
