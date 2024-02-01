@@ -7,4 +7,4 @@
 * Print each variable. Is `var1 > var2`?
 * Check the type of each variable using the `str()` function (e.g. `str(var1)`)
 * Which variable types are missing? Try assign variables to these types, and check with the `str()` function
-* *(Challenge - not required)* Define variables `X1`, `X2`, `t`, `s1`, `s2`, `n1`, `n2`. Set them equal to quantitative values of your own choosing. 
+* **(Challenge - not required)** Define variables `X1`, `X2`, `t`, `s1`, `s2`, `n1`, `n2`. Set them equal to quantitative values of your own choosing. Then write an expression in terms of those variables to calculate $$(X_1 - X_2) + t\sqrt{\frac{s_{1}^2}{n_1} + \frac{s_2^2}{n_2}}$$
