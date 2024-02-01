@@ -88,7 +88,7 @@ x + y
 1. Use > to check whether sqrt(3) is greater than log(3).
 1. Use < to check whether log(3) is less than log10(3).
 1. R has the value of pi encoded in this variable: Try executing pi in your R script.
-1. (Challenge) A penny has a diameter of 0.750 mm. A quarter has a diameter of 24.26 mm. Calculate the difference in the areas of a quarter and a penny. Remember, the area of a circle is equal to $$\pi (radius)^2$$, and $$radius = diameter/2$$.
+1. (Challenge) A penny has a diameter of 0.750 mm. A quarter has a diameter of 24.26 mm. Calculate the difference in the areas of a quarter and a penny. Remember, the area of a circle is equal to $\pi (radius)^2$, and $radius = diameter/2$.
 
 ## Assigning/printing variables
 1. **(CW) Assign a variable to var1 with the result of 5 different mathematical operations/functions, e.g. floor((27 - 3) %% 5) + ceiling(-5.9)^2.**
