@@ -27,7 +27,16 @@
 | `log(x)` | Natural log of x |
 | `log10(x)` | Log base 10 of x |
 | `floor(x)` | x rounded down |
-| `ceiling(x) | x rounded up |
+| `ceiling(x)` | x rounded up |
+
+## Variable types in R
+
+| Variable type | Abbreviation | Example |
+| -- | -- | -- |
+| Character | chr | 'R', 'Hello world'|
+|Numeric | num | 6.2, 4.13, -3 |
+|Integer | int | 3L, -1L, 12L |
+| Logical | logi | TRUE, FALSE, T, F |
 
 1.
   * Open a new R script.
