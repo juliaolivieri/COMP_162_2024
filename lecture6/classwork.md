@@ -73,17 +73,32 @@ y <- c(-2, 4, 9, 0)
 x + y
 ```
 
-## Variable assignment
-  * **(CW) Create a new R script file, and save it as classwork6.R. You will submit this file for the "classwork 6" assignment.**
-  * **(CW) Assign a variable `var1` to an integer value.**
-  * **(CW) Assign a variable `var2` to the result of a combination of mathematical operations and functions (e.g. `abs(89 %% 5) + sqrt(log(95))`)**
-  * Assign a third variable `var3` to `var1 > var2`.
-  * **(CW) Print each variable**
-  * Is `var1 > var2`?
-  * **(CW) Check the type of each variable using the `str()` function (e.g. `str(var1)`)**
-  * Which variable types are missing? Try assign variables to these types, and check with the `str()` function
-  * Define variables `X1`, `X2`, `t`, `s1`, `s2`, `n1`, `n2`. Set them equal to quantitative values of your own choosing. 
-  * Write an expression in terms of those variables to calculate $$(X_1 - X_2) + t\sqrt{\frac{s_{1}^2}{n_1} + \frac{s_2^2}{n_2}}$$
+## Exploring R Studio
+1. **(CW) Create a new R script file, and save it as classwork6.R. You will submit this file for the "classwork 6" assignment.**
+1. **(CW) Add a comment to the beginning of your script by using #. What happens when you try to run this line of code? I recommend including comments throughout this classwork to 1. help you remember what you did.**
+1. Evaluate the mathematical expression (400/20) + 22 in the console. Then add it to your script file, and evaluate it there. Is there a difference? Which is preferrable?
+1. Try writing -3:6 in your script and evaluating it. What is the output? What do you think the output will be if you instead input 4:93? Check to see if you were right.
+1. Check the documentation of the min function by running ?min in your script. What does this function do based on the documentation?
+1. At the bottom of the documentation you should see some lines of code starting with require(stats); require(graphics) and ending with  identical(n0, pmax(n0, 4))). Copy these lines of code into your script, highlight them, and press "Run." Do you see a plot appear in the "Plots" pane?
+1. After running this code, some objects should appear in the "Environment" RStudio pane. This is where you will see all the objects you have defined in your session.
+
+## Mathematical Operations in R
+1. **(CW) One of the most basic uses of R is as a calculator. Write down a line of code in your script to calculate the number of seconds in a year. Include a comment above it to keep track of what you were trying to calculate.**
+1. Use the %% operator to check whether the following number is even: (3.2^2) %/% 2
+1. Use > to check whether sqrt(3) is greater than log(3).
+1. Use < to check whether log(3) is less than log10(3).
+1. R has the value of pi encoded in this variable: Try executing pi in your R script.
+1. (Challenge) A penny has a diameter of 0.750 mm. A quarter has a diameter of 24.26 mm. Calculate the difference in the areas of a quarter and a penny. Remember, the area of a circle is equal to $$\pi (radius)^2$$, and $$radius = diameter/2$$.
+
+## Assigning/printing variables
+1. **(CW) Assign a variable to var1 with the result of 5 different mathematical operations/functions, e.g. floor((27 - 3) %% 5) + ceiling(-5.9)^2.**
+1. Assign a variable var2 to a different result of mathematical operations/functions.
+1. Assign a third variable to the result of var1 == var2.
+1. Assign var4 to T.
+1. Assign var5 to TRUE.
+1. Check whether var4 is equal to var5 using ==.
+1. Print each variable.
+1. (Challenge) Redo question 7 from the section "Mathematical Operations in R", but this time assign a variable for the diameter of a quarter, a variable for the diameter of a penny, a variable for the area of a quarter, a variable for the area of a penny, and a variable for the difference in area of the two.
   
 ## Vectors
 * Create a vector by combining a numeric, logical, and character element (e.g. `c(5, TRUE, "tiger")`)
