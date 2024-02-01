@@ -40,8 +40,9 @@ Note: "classwork" questions are bolded. You are welcome to include more answers 
 |Integer | int | 3L, -1L, 12L |
 | Logical | logi | TRUE, FALSE, T, F |
 
-### Example code from lecture
+## Part 1: R Basics
 
+### Example code from lecture
 ```
 # Assigning variables
 my_variable <- 100
@@ -51,29 +52,7 @@ print(my_variable)
 # Using mathematical operations and functions
 x <- ((5*2) + abs(3 - 10)) %% 2
 str(x)
-
-# vectors
-is.vector(5)
-is.vector("hello")
-c(5,10)
-days <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
-length(days)
-str(days)
-
-# Indexing
-nums <- c(3,5,2,30)
-nums[1]
-nums[1:3]
-nums[2:length(nums)]
-nums[c(2,4)]
-
-# Mathematical operations on vectors
-x <- c(4, 5, 2, -1)
-y <- c(-2, 4, 9, 0)
-x + y
 ```
-
-## Part 1: R Basics
 
 ### Exploring R Studio
 1. **(CW) Create a new R script file, and save it as classwork6.R. You will submit this file for the "classwork 6" assignment.**
@@ -112,6 +91,30 @@ x + y
 1. Is var8 equal to var6?
 
 ## Part 2: Vectors
+
+### Example Code from Lecture
+
+```
+# vectors
+is.vector(5)
+is.vector("hello")
+c(5,10)
+days <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+length(days)
+str(days)
+
+# Indexing
+nums <- c(3,5,2,30)
+nums[1]
+nums[1:3]
+nums[2:length(nums)]
+nums[c(2,4)]
+
+# Mathematical operations on vectors
+x <- c(4, 5, 2, -1)
+y <- c(-2, 4, 9, 0)
+x + y
+```
 
 ### Creating vectors
 
