@@ -158,6 +158,37 @@ date <- c("Jan17", "Jan18", "Jan19", "Jan20", "Jan23", "Jan24", "Jan25", "Jan26"
 
 ## Part 3: Data Frames
 
+### Example Code from Lecture
+
+```
+# Example data frame
+animals <- data.frame(
+  species=c("dog", "cat", "penguin"),
+  age=c(7, 10, 3),
+  name=c("Mittens", "Martha", "Typo")
+)
+
+# load the iris dataset
+data(iris)
+
+# View the iris dataset
+View(iris)
+
+# Find summary statistics of the iris dataset
+head(iris)
+str(iris)
+summary(iris)
+
+# Access the "Species" column
+iris$Species
+
+# Indexing the iris data frame
+# Rows are first, columns are second
+iris[2:7, c(1, 4)]
+iris[c(4,6), c(2, 5)]
+
+```
+
 ### Creating data frames
 
 1. Try creating your first data frame from the vectors defined in the previous section. Use the following code:
