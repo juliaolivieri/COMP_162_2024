@@ -4,13 +4,19 @@
 
 | Operator | Description |
 | -- | -- |
-| + | Addition |
-| - | Subtraction|
-|* | Multiplication |
-| / | Division |
-| ^ | Exponent |
-| %% | Modulo |
-| %/% | Floor division |
+| `+` | Addition |
+| `-` | Subtraction|
+|`*` | Multiplication |
+| `/` | Division |
+| `^` | Exponent |
+| `%%` | Modulo |
+| `%/%` | Floor division |
+| `>` | Greater than | 
+| `<` | Less than | 
+| `>=` | Greater than or equal to |
+| `<=` | Less than or equal to |
+| `!=` | Not equal to | 
+| `==` | Equal to |
 
 1.
   * Open a new R script.
