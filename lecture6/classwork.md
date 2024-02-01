@@ -232,13 +232,15 @@ We can access rows and columns of data frames using square brackets, similar to 
 5. Write a line of code to subset the `animals` dataframe to just the first and third rows.
 6. Write a line of code to subset the `animals` dataframe to the second and third rows, and the first and second columns.
 
-## Installing packages
+
+## Part 4
+### Installing packages
 
 1. You can install an R package using the `install.packages()` function, for example `install.packages("tidyverse")`. Try running this command to make sure the package is installed.
 2. You can load an R package into your session using the `library()` function, e.g. `library(tidyverse)`. Load the `tidyverse` package into your current session.
 3. You can check which packages are loaded in your current session by going to the "Packages" tab in the bottom right pane of the RStudio console. Click on one of the checked packages to go to its documentation.
 
-## Changing the working directory
+### Changing the working directory
 
 1. Now that we are about to start reading and writing data in R, we need to figure out where R thinks we are in our computer's file system. To do this, run the command `getwd()` to get the current working directory.
   * On a mac this will look something like: `/Users/jolivie1` (except with your username instead of `jolivie1`)
@@ -249,7 +251,7 @@ We can access rows and columns of data frames using square brackets, similar to 
 3. Now running `getwd()` should show your new working directory.
  
 
-## Reading/writing your own data
+### Reading/writing your own data
 
 1. Load the tidyverse package using `library(tidyverse)`.
 2. Download the following file to your working directory location (this is the desktop if you followed the instructions from the previous section): https://drive.google.com/file/d/1YGKp2pRhVINto56c9lFSLoxKdGD19a4C/view?usp=sharing 
