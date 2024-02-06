@@ -55,11 +55,61 @@ ggplot(mpg) +
 ```
 
 ### Exercises
-1. **(CW)Plot `cty` vs `hwy` and color by `drv`, determine shape by `fl`, and size by `displ`.**
-1. Make three different plots of `cty` vs `hwy`, the first colored by `drv`, the second with shape determined by `fl`, and the third with size determined by `displ`.
+1. **(CW) Plot `cty` vs `hwy` and color by `drv`, determine shape by `fl`, and size by `displ`.**
+1. **(CW) Make three different plots of `cty` vs `hwy`, the first colored by `drv`, the second with shape determined by `fl`, and the third with size determined by `displ`.**
 1. Is it easier to see patterns in the plot from 1. or the plot from 2.?
 1. Plot `displ` vs `cty`. Try mapping color to `hwy`. What happens?
 1. Try mapping a quantitative variable to shape. What happens?
 1. Try mapping a categorical variable to size. What happens?
 1. What happens if you map the same variable to multiple aesthetics?
-1. What happens if you map an aesthetic to something other than a variable name, like `aes(color = displ < 5)`
+1. What happens if you map an aesthetic to something other than a variable name, like `aes(color = displ < 5)`?
+1. (Challenge) You should have access to the `diamonds` dataset (it is pre-loaded with the `ggplot2` package). Try plotting different variables against each other. Which aesthetic choices let you tell the best story? You can see what the variables mean using `?diamonds`. 
+
+
+## Part 3: Faceting
+
+### Code from class
+```
+# plot displ vs hwy, colored and faceted by class
+ggplot(mpg) +
+  geom_point(aes(displ, hwy, color = class)) +
+  facet_wrap(~class)
+```
+
+### Exercises
+1. **(CW) Plot `displ` vs `hwy` and facet by `cyl`.**
+1. **(CW) What are the advantages to using faceting instead of the color aesthetic? What are the disadvantages? How might the balance change if you had a larger dataset?**
+1. Try faceting by each variable other than `displ` and `hwy`. Which seem the most useful? Which seem the least useful?
+1. What happens when you color by the same variable that you're faceting by?
+1. What happens when you color by a different variable?
+1. (Challenge) Try faceting in the `diamond` dataset as well. When do you think faceting is preferable to using aesthetics to distinguish groups?
+
+## Part 4: Exploring geoms
+
+### Code from class
+```
+# create a histogram from a quantitative variable
+ggplot(mpg) +
+  geom_histogram(aes(hwy))
+
+# Create a histogram of the hwy variable with a bin width of 5
+ggplot(mpg,
+       aes(hwy)) +
+  geom_histogram(binwidth=5)
+
+# create a bar chart from a categorical variable
+ggplot(mpg) +
+  geom_bar(aes(fl))
+
+# create "smooth" line from two quantitative variables
+ggplot(data = mpg) +
+  geom_smooth(mapping = aes(x = displ, y = hwy))
+```
+
+### Exercises
+1. **(CW) Create a histogram of the `cty` variable.** 
+1. **(CW) Create a bar plot of the `class` variable.**
+1. Explore the distribution of the `carat` variable in the diamonds dataset using a histogram (`diamonds` is pre-loaded). What binwidth reveals the most interesting patterns?
+1. Try making either a histogram or bar plot for each variable in mpg, depending on whether it's quantitative or categorical.
+1. (Challenge) What happens when you use color in these plots?
+1. (Challenge) Scroll through this list of the "top 50 ggplot2 visualizations": http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html. Copy and paste the code for one that is of interest to you. Can you make a version of that plot using the `mpg` data? 
