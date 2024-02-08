@@ -46,6 +46,44 @@ ggplot(msleep) +
 4. Try changing some of the aesthetic properties of your plots. How can you convey the most information in your plot?
 5. Are there any questions that you weren't able to answer using the techniques we've learned so far?
 
+
+## Part 3: 
+
+### Code from class
+```
+# boxplot of vore vs sleep_total
+ggplot(msleep) +
+  geom_boxplot(aes(vore, sleep_total))
+
+# add point layer to boxplot
+ggplot(msleep) +
+  geom_boxplot(aes(vore, sleep_total)) +
+  geom_point(aes(vore, sleep_total))
+
+# add jitter layer to boxplot
+ggplot(msleep) +
+  geom_boxplot(aes(vore, sleep_total)) +
+  geom_point(aes(vore, sleep_total)) +
+  geom_jitter(aes(vore, sleep_total))
+
+# condensed version of the code
+ggplot(msleep,aes(vore, sleep_total)) +
+  geom_boxplot() +
+  geom_point() +
+  geom_jitter()
+```
+
+### Exercises
+1. **(CW) Create a box plot of `vore` vs `brainwt`.**
+2. **(CW) Try log-scaling the `brainwt` axis.**
+3. **(CW) Add points to your plot.**
+4. **(CW) Add jitter to your plot.**
+5. What conclusions can you draw from this boxplot?
+6. **(CW) Create a boxplot of `conservation` vs one of the quantitative variables.**
+7. Try using the "color" aesthetic in a box plot. What happens?
+8. (Challenge) Look up the ggplot2 cheatsheet. Try other geoms that are suggested for plotting a continuous and discrete variable.
+
+
 ## Part 4: Reading/writing your own data
 
 ### Code from class
