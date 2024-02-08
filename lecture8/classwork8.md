@@ -13,5 +13,7 @@ table(msleep$vore)
 3. **(CW) Look at `msleep` metadata with `?msleep`**
 4. **(CW) Create a one-way frequency table of the conservation status in the msleep data**
 5. Which conservation status appears most in our data? Which appears least?
-6. **(CW) Come up with at least three questions you could answer based on the msleep data.**
-7. You can perform some exploratory data analysis 
+6. Perform some exploratory data analysis on this dataset to familiarize yourself with the variables and the kinds of questions you can ask.
+7. **(CW) Come up with at least three questions you could answer based on the msleep data.**
+
+## Part 2: Plotting data
