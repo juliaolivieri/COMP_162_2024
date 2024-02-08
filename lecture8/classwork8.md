@@ -83,8 +83,36 @@ ggplot(msleep,aes(vore, sleep_total)) +
 7. Try using the "color" aesthetic in a box plot. What happens?
 8. (Challenge) Look up the ggplot2 cheatsheet. Try other geoms that are suggested for plotting a continuous and discrete variable.
 
+## Part 4: Adding text to plots
+### Code from class
+```
+# Add text layer to plot
+ggplot(msleep, aes(brainwt, bodywt,label=name)) +
+  geom_point() +
+  scale_x_continuous(trans="log2") +
+  scale_y_continuous(trans="log2") +
+  geom_text()
 
-## Part 4: Reading/writing your own data
+# be wary of overlap of text
+ggplot(msleep, aes(brainwt, bodywt,label=name)) +
+  geom_point() +
+  scale_x_continuous(trans="log2") +
+  scale_y_continuous(trans="log2") +
+  geom_text(check_overlap=T)
+```
+
+### Exercises
+1. **(CW) Create a scatterplot of `brainwt` vs `sleep_total`. Consider log-scaling one or both of the axes.**
+2. **(CW) Add a text layer to your plot. Consider using `check_overlap=T` to make it look neater.**
+3. What are some animals in the dataset that sleep for the smallest amount of time?
+4. What are some animals in the dataset that sleep for the largest amount of time?
+5. Try adding a text layer to a boxplot.
+6. Synthesizing everything we have learned about plotting in ggplot2, try to create the most interesting and informative plot that you can based on the msleep data.
+7. **(CW) Submit the plot that you are most proud of to this google form: https://forms.gle/LPirk3X3E4tUpoPo8. We will look over some of the submissions as a class.**
+8. (Challenge) Try creating a text layer that is colored by one of the categorical variables.
+9. (Challenge) Explore the additional capabilities of ggplot2 that are summarized in the cheatsheet. Are there any techniques that we didn't go over that you could see yourself using in the future?
+
+## Part 5: Reading/writing your own data
 
 ### Code from class
 ```
