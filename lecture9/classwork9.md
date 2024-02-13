@@ -92,9 +92,11 @@ filter(msleep, !is.na(conservation))
 3. **(CW) Create a data frame that contains only rows for which the eye color is "blue" or "black".**
 4. **(CW) Create a dataframe called `sub_starwars` that only contains rows for which `birth_year` is not NA.**
 5. Try creating a histogram of `birth_year` based on `sub_starwars`.
-6. Create a data frame called `tallest` that only contains rows for which `height` is greater than 190.
-7. Create a data frame called `smallest` that only contains rows for which `height` is less than 170.
-8. Create a data frame called `blue_eyes` that only contains characters whose `eye_color` is equal to `blue`.
+6. Create a scatterplot of `birth_year` vs `height`.
+7. Create a boxplot of `species` vs `height`.
+8. Create a data frame called `tallest` that only contains rows for which `height` is greater than 190.
+9. Create a data frame called `smallest` that only contains rows for which `height` is less than 170.
+10. Create a data frame called `blue_eyes` that only contains characters whose `eye_color` is equal to `blue`.
 
 ## Part 5: The `group_by()` and `summarize()` functions
 ### Code from class
