@@ -9,81 +9,100 @@
 ## Part 1: The `arrange()` function
 ### Code from class
 ```
-# returns the data frame sorted by name (but the result isn't saved)
-arrange(starwars, name)
+# sort dataframe by sleep_total
+arrange(msleep, sleep_total)
 
-# saves the result of sorting the data frame by name
-starwars <- arrange(starwars, name)
+# sort dataframe by sleep_total and save the result
+msleep <- arrange(msleep, sleep_total)
 
-# saves the result of sorting the data frame by eye_color, then height
-starwars <- arrange(starwars, eye_color, height)
+# sort dataframe by vore and sleep_total and save the result
+msleep <- arrange(msleep, vore, sleep_total)
 
-# saves the result of sorting the data frame by eye_color, then height in descending order
-starwars <- arrange(starwars, eye_color, desc(height))
+# sort dataframe by sleep_total (in descending order) and save the result
+msleep <- arrange(msleep, vore, desc(sleep_total))
 ```
 
 ### Exercises
-1. **(Classwork) Sort the data frame by `hair_color`.**
-2. Sort the data frame by `age` in descending order.
-3. Sort the data frame by `hair_color`, then `age` in descending order.
-4. Sort the data frame by `hair_color` in descending order, then `age` in ascending order.
-5. (Challenge) Sort the data frame by every column in the data frame, choosing ascending order for half and descending order for half. 
+1. **(CW) Sort the data frame by `hair_color` and save the result.**
+2. **(CW) Sort the data frame by `age` in descending order.**
+3. **(CW) Sort the data frame by `hair_color` in descending order, then `age` in ascending order.**
+4. Sort the data frame by `hair_color`, then `age` in descending order.
+5. Who is the tallest Star Wars character?
+6. Who is the shortest Star Wars character who has brown eyes?
+7. (Challenge) Sort the data frame by every column in the data frame, choosing ascending order for half and descending order for half. 
 
 
 ## Part 2: The `select()` function
 ### Code from class
 ```
-# Select the columns name, age, and species
-small_starwars <- select(starwars, name, age, species)
+# subset dataframe to only the name, brainwt, and bodywt columns
+tiny_sleep <- select(msleep, name, brainwt, bodywt)
 
-# Remove the gender and homeworld columns, but keep all others
-tiny_starwars <- select(starwars, -gender, -homeworld)
+# remove the conservation and sleep_rem columns
+small_sleep <- select(msleep, -conservation, -sleep_rem)
 ```
 
 ### Exercises
-1. **(Classwork) Create a data frame called `selected1` with only the columns `hair_color`, `eye_color`, and `name`.** 
-2. Create a data frame called `selected2` that includes all columns except `hair_color` and `eye_color`.
+1. **(CW) Create a data frame called `selected1` with only the columns `hair_color`, `eye_color`, and `name`.** 
+2. **(CW) Create a data frame called `selected2` that includes all columns except `hair_color` and `eye_color`.**
 3. Create a data frame that includes only the `height`, `homeworld`, and `species` columns.
-4. (Challenge) Create a data frame that includes all columns except `hair_color`, `eye_color`, `mass`, and `height`. Try doing this in two ways: by including all other columns, and by dropping these specific columns.  
+4. Select the columns name, age, and species.
+5. Remove the gender and homeworld columns, but keep all others.
+6. (Challenge) Create a data frame that includes all columns except `hair_color`, `eye_color`, `mass`, and `height`. Try doing this in two ways: by including all other columns, and by dropping these specific columns.  
 
 ## Part 3: The `mutate()` function
 ### Code from class
 ```
-# command to add a column called height_inches  that is the height column divided by 2.54
-starwars <- mutate(starwars, height_inches = height/2.54)
+# command to add a column called bodywt_lbs that is the bodywt column times 2.20462
+msleep <- mutate(msleep, bodywt_lbs = bodywt*2.20462)
 
-# command to add a column equal to the sum of the height and age columns
-starwars <- mutate(starwars, height_age = height + age)
+# command to add a column that is brainwt/bodywt
+msleep <- mutate(msleep, brain_body_ratio = brainwt/bodywt)
 ```
 
 ### Exercises
-1. **(Classwork) Add a column called `mass_div_height` that is equal to the `mass`  column divided by the `height` column.**
-2. Add a column called `sqrt_mass` that is equal to the square root of the `mass` column.
-3. Add a column that is equal to `(mass - age) + height`.
-4. (Challenge) Add a column called `elder` that equals `True` if the character is older than 65, and False otherwise.
+1. **(CW) Add a column called `mass_div_height` that is equal to the `mass`  column divided by the `height` column.**
+2. **(CW) Add a column called `height_inches` that is the height column divided by 2.54.**
+3. Add a column equal to the sum of the height and age columns.
+4. Add a column called `sqrt_mass` that is equal to the square root of the `mass` column.
+5. Add a column that is equal to `(mass - age) + height`.
+6. (Challenge) Add a column called `elder` that equals `True` if the character is older than 65, and False otherwise.
 
-## The `filter()` function
+## Part 4: The `filter()` function
 ### Code from class
 ```
-# Command to filter the data frame to only rows for which species equals "Droid"
-droids <- filter(starwars, species == “Droid”)
+# Command to filter the data frame to only rodents
+rodents <- filter(msleep, order == "Rodentia")
 
-# Command to filter the data frame to only rows for which age is greater than 65
-elders <- filter(starwars, age > 65)
+# filter to only rodents and primates
+rodents_primates <- filter(msleep, order %in% c("Rodentia", "Primates"))
+
+# Command to filter the data frame to only animals that are awake between 8 and 12 hours a day
+filter(msleep, (awake > 8) & (awake < 12) )
 ```
 
 ### Exercises
-1. **(Classwork) Create a data frame called `from_tatooine` that only contains rows for which `homeworld` is equal to `Tatooine`.**
-2. Create a data frame called `tallest` that only contains rows for which `height` is greater than 190.
-3. Create a data frame called `smallest` that only contains rows for which `height` is less than 170.
-4. Create a data frame called `blue_eyes` that only contains characters whose `eye_color` is equal to `blue`.
+1. **(CW) Create a data frame called `from_tatooine` that only contains rows for which `homeworld` is equal to `Tatooine`.**
+2. **(CW) Create a data frame called `droids` that contains only rows for which `species == "Droid"`.**
+3. **(CW) Create a data frame that contains only rows for which the eye color is "blue" or "black".**
+4. Create a data frame called `tallest` that only contains rows for which `height` is greater than 190.
+5. Create a data frame called `smallest` that only contains rows for which `height` is less than 170.
+6. Create a data frame called `blue_eyes` that only contains characters whose `eye_color` is equal to `blue`.
 
 ## The `group_by()` and `summarize()` functions
 ### Code from class
 ```
-# finds the mean height of each species
-grouped_data <- group_by(starwars, species)
-summarized_data <- summarize(grouped_data, average_height = mean(height))
+# finds the mean sleep_total broken down by the vore variable
+grouped_data <- group_by(msleep, vore)
+summarized_data <- summarize(grouped_data, average_sleep = mean(sleep_total))
+
+# remove rows for which brainwt is NA
+filter(msleep, !is.na(brainwt))
+
+# find the median brain weight broken down by the vore variable
+grouped_data %>%
+  filter(!is.na(brainwt)) %>%
+  summarize(average_sleep = median(brainwt))
 ```
 
 | Function | Aggregation type |
@@ -96,13 +115,38 @@ summarized_data <- summarize(grouped_data, average_height = mean(height))
 | `sd()` | Standard deviation |
 
 ### Exercises
-1. **(Classwork) Find the average `age` by `gender`**
-2. Find the maximum `age` by `homeworld`.
-3. Find the sum of `mass` by `hair_color`.
+1. **(CW) Find the average `age` by `gender`.**
+2. **(CW) Find the median height of each species.**
+3. **(CW) Remove rows for which `brainwt` is NA.**
+4. Find the maximum `age` by `homeworld`.
+5. Find the sum of `mass` by `hair_color`.
 
 ## The Pipe (`%>%`)
 ### Code from class
 ```
+# sort by bodywt_lbs and select three columns
+msleep %>% 
+  arrange(desc(bodywt_lbs)) %>%
+  select(name, bodywt, bodywt_lbs)
+
+# groupby vore and filter out NAs
+msleep %>%
+  group_by(vore) %>%
+  filter(!is.na(brainwt)) %>%
+  summarize(average_sleep = median(brainwt))
+
+# filter msleep and then plot
+msleep %>%
+  filter(order == "Primates") %>%
+  select(brainwt, brain_body_ratio, sleep_total, name) %>%
+  filter(!is.na(brainwt)) %>%
+  ggplot(aes(brainwt, sleep_total, label=name)) +
+  geom_point() +
+  scale_x_continuous(trans="log2") +
+  geom_text()
+
+
+
 # Grouping by species, finding the average height of each species, and sorting by average height **without** the pipe
 grouped_data <- group_by(starwars, species)
 summarized_data <- summarize(grouped_data, average_height = mean(height))
@@ -115,11 +159,11 @@ starwars %>%
     summarize(average_height = mean(height)) %>%
     arrange(average_height) %>%
     View()
-
 ```
 
 ### Exercises
-1. **(CW) Try re-writing the answer to the previous classwork question using the pipe operator**
-2. Try filtering the data frame to columns for which `species` is equal to `Human` and sorting by `age` using `%>%`.
-3. (Challenge) Try stringing the `arrange()`, `select()`, `mutate()`, `filter()`, `group_by()`, and `summarize()` functions all together using `%>%`.
-4. (Challenge) Try re-writing all of the previous classwork questions using `%>%`.
+1.**(CW) Grouping by species, finding the average height of each species, and sorting by average height **without** the pipe**
+2. **(CW)  Grouping by species, finding the average height of each species, and sorting by average height **with** the pipe**
+3. Try filtering the data frame to columns for which `species` is equal to `Human` and sorting by `age` using `%>%`.
+4. (Challenge) Try stringing the `arrange()`, `select()`, `mutate()`, `filter()`, `group_by()`, and `summarize()` functions all together using `%>%`.
+5. (Challenge) Try re-writing all of the previous classwork questions using `%>%`.
