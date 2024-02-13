@@ -47,7 +47,7 @@ small_sleep <- select(msleep, -conservation, -sleep_rem)
 1. **(CW) Create a data frame called `selected1` with only the columns `hair_color`, `eye_color`, and `name`.** 
 2. **(CW) Create a data frame called `selected2` that includes all columns except `hair_color` and `eye_color`.**
 3. Create a data frame that includes only the `height`, `homeworld`, and `species` columns.
-4. Select the columns name, age, and species.
+4. Select the columns name, birth year, and species.
 5. Remove the gender and homeworld columns, but keep all others.
 6. (Challenge) Create a data frame that includes all columns except `hair_color`, `eye_color`, `mass`, and `height`. Try doing this in two ways: by including all other columns, and by dropping these specific columns.  
 
@@ -64,9 +64,9 @@ msleep <- mutate(msleep, brain_body_ratio = brainwt/bodywt)
 ### Exercises
 1. **(CW) Add a column called `mass_div_height` that is equal to the `mass`  column divided by the `height` column.**
 2. **(CW) Add a column called `height_inches` that is the height column divided by 2.54.**
-3. Add a column equal to the sum of the height and age columns.
+3. Add a column equal to the sum of the height and birth year columns.
 4. Add a column called `sqrt_mass` that is equal to the square root of the `mass` column.
-5. Add a column that is equal to `(mass - age) + height`.
+5. Add a column that is equal to `(mass - birth_year) + height`.
 6. (Challenge) Add a column called `elder` that equals `True` if the character is older than 65, and False otherwise.
 
 ## Part 4: The `filter()` function
@@ -116,10 +116,10 @@ grouped_data %>%
 | `sd()` | Standard deviation |
 
 ### Exercises
-1. **(CW) Find the average `age` by `gender`.**
+1. **(CW) Find the average `birth_year` by `gender`.**
 2. **(CW) Find the median height of each species.**
 3. **(CW) Remove rows for which `brainwt` is NA.**
-4. Find the maximum `age` by `homeworld`.
+4. Find the maximum `birth_year` by `homeworld`.
 5. Find the sum of `mass` by `hair_color`.
 
 ## Part 6: The Pipe (`%>%`)
@@ -165,6 +165,6 @@ starwars %>%
 ### Exercises
 1. **(CW) Grouping by species, finding the average height of each species, and sorting by average height **without** the pipe**
 2. **(CW)  Grouping by species, finding the average height of each species, and sorting by average height **with** the pipe**
-3. Try filtering the data frame to columns for which `species` is equal to `Human` and sorting by `age` using `%>%`.
+3. Try filtering the data frame to columns for which `species` is equal to `Human` and sorting by `birth_year` using `%>%`.
 4. (Challenge) Try stringing the `arrange()`, `select()`, `mutate()`, `filter()`, `group_by()`, and `summarize()` functions all together using `%>%`.
 5. (Challenge) Try re-writing all of the previous classwork questions using `%>%`.
