@@ -80,15 +80,20 @@ rodents_primates <- filter(msleep, order %in% c("Rodentia", "Primates"))
 
 # Command to filter the data frame to only animals that are awake between 8 and 12 hours a day
 filter(msleep, (awake > 8) & (awake < 12) )
+
+# filter to only rows with conservation status not equal to NA
+filter(msleep, !is.na(conservation))
 ```
 
 ### Exercises
 1. **(CW) Create a data frame called `from_tatooine` that only contains rows for which `homeworld` is equal to `Tatooine`.**
 2. **(CW) Create a data frame called `droids` that contains only rows for which `species == "Droid"`.**
 3. **(CW) Create a data frame that contains only rows for which the eye color is "blue" or "black".**
-4. Create a data frame called `tallest` that only contains rows for which `height` is greater than 190.
-5. Create a data frame called `smallest` that only contains rows for which `height` is less than 170.
-6. Create a data frame called `blue_eyes` that only contains characters whose `eye_color` is equal to `blue`.
+4. **(CW) Create a dataframe called `sub_starwars` that only contains rows for which `birth_year` is not NA.**
+5. Try creating a histogram of `birth_year` based on `sub_starwars`.
+6. Create a data frame called `tallest` that only contains rows for which `height` is greater than 190.
+7. Create a data frame called `smallest` that only contains rows for which `height` is less than 170.
+8. Create a data frame called `blue_eyes` that only contains characters whose `eye_color` is equal to `blue`.
 
 ## Part 5: The `group_by()` and `summarize()` functions
 ### Code from class
