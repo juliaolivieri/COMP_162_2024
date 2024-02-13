@@ -89,7 +89,7 @@ filter(msleep, (awake > 8) & (awake < 12) )
 5. Create a data frame called `smallest` that only contains rows for which `height` is less than 170.
 6. Create a data frame called `blue_eyes` that only contains characters whose `eye_color` is equal to `blue`.
 
-## The `group_by()` and `summarize()` functions
+## Part 5: The `group_by()` and `summarize()` functions
 ### Code from class
 ```
 # finds the mean sleep_total broken down by the vore variable
@@ -121,7 +121,7 @@ grouped_data %>%
 4. Find the maximum `age` by `homeworld`.
 5. Find the sum of `mass` by `hair_color`.
 
-## The Pipe (`%>%`)
+## Part 6: The Pipe (`%>%`)
 ### Code from class
 ```
 # sort by bodywt_lbs and select three columns
