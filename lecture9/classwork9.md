@@ -23,13 +23,14 @@ msleep <- arrange(msleep, vore, desc(sleep_total))
 ```
 
 ### Exercises
-1. **(CW) Sort the data frame by `hair_color` and save the result.**
-2. **(CW) Sort the data frame by `age` in descending order.**
-3. **(CW) Sort the data frame by `hair_color` in descending order, then `age` in ascending order.**
-4. Sort the data frame by `hair_color`, then `age` in descending order.
+1. **(CW) Sort the data frame by `hair_color` and view the result.**
+2. **(CW) Sort the data frame by `birth_year` in descending order.**
+3. **(CW) Sort the data frame by `hair_color` in descending order, then `birth_year` in ascending order.**
+4. Sort the data frame by `hair_color`, then `birth_year` in descending order.
 5. Who is the tallest Star Wars character?
 6. Who is the shortest Star Wars character who has brown eyes?
-7. (Challenge) Sort the data frame by every column in the data frame, choosing ascending order for half and descending order for half. 
+7. (Challenge) Try making a histogram of `birth_year`. What goes wrong?
+8. (Challenge) Sort the data frame by every column in the data frame, choosing ascending order for half and descending order for half. 
 
 
 ## Part 2: The `select()` function
