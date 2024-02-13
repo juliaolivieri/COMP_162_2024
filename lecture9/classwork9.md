@@ -67,7 +67,7 @@ msleep <- mutate(msleep, brain_body_ratio = brainwt/bodywt)
 3. Add a column equal to the sum of the height and birth year columns.
 4. Add a column called `sqrt_mass` that is equal to the square root of the `mass` column.
 5. Add a column that is equal to `(mass - birth_year) + height`.
-6. (Challenge) Add a column called `elder` that equals `True` if the character is older than 65, and False otherwise.
+6. (Challenge) Add a column called `tall` that equals `TRUE` if the character's height is greater than 200, and `FALSE` otherwise.
 
 ## Part 4: The `filter()` function
 ### Code from class
