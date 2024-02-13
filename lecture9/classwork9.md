@@ -29,7 +29,7 @@ msleep <- arrange(msleep, vore, desc(sleep_total))
 4. Sort the data frame by `hair_color`, then `birth_year` in descending order.
 5. Who is the tallest Star Wars character?
 6. Who is the shortest Star Wars character who has brown eyes?
-7. (Challenge) Try making a histogram of `birth_year`. What goes wrong?
+7. Make a bar chart for the `homeworld` variable. Does the plot look better when `homeworld`  is on the x or y axis?
 8. (Challenge) Sort the data frame by every column in the data frame, choosing ascending order for half and descending order for half. 
 
 
@@ -49,7 +49,8 @@ small_sleep <- select(msleep, -conservation, -sleep_rem)
 3. Create a data frame that includes only the `height`, `homeworld`, and `species` columns.
 4. Select the columns name, birth year, and species.
 5. Remove the gender and homeworld columns, but keep all others.
-6. (Challenge) Create a data frame that includes all columns except `hair_color`, `eye_color`, `mass`, and `height`. Try doing this in two ways: by including all other columns, and by dropping these specific columns.  
+6. (Challenge) Create a data frame that includes all columns except `hair_color`, `eye_color`, `mass`, and `height`. Try doing this in two ways: by including all other columns, and by dropping these specific columns.
+7. (Challenge) Try making a histogram of `birth_year`. What goes wrong?
 
 ## Part 3: The `mutate()` function
 ### Code from class
@@ -121,9 +122,9 @@ grouped_data %>%
 | `sd()` | Standard deviation |
 
 ### Exercises
-1. **(CW) Find the average `birth_year` by `gender`.**
-2. **(CW) Find the median height of each species.**
-3. **(CW) Remove rows for which `brainwt` is NA.**
+1. **(CW) Find the average `birth_year` by `gender` using the `sub_starwars` dataframe.**
+2. **(CW) Remove rows for which `height` is NA.**
+3. **(CW) Find the median height of each species. You will need to remove NA values from the height column to do this.**
 4. Find the maximum `birth_year` by `homeworld`.
 5. Find the sum of `mass` by `hair_color`.
 
