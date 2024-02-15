@@ -31,7 +31,7 @@ Column descriptions:
 `humidity` | Humidity (between 0 and 100)|
 `windspeed` | Wind speed in miles per hour|
 
-## Part 3: Bikesharing practice 1
+## Part 2: Bikesharing practice 1
 
 Code from class is available here: https://juliaolivieri.github.io/COMP_162_2024/lecture10.1.html 
 
@@ -43,7 +43,7 @@ Code from class is available here: https://juliaolivieri.github.io/COMP_162_2024
 1. Filter your observations to only days for which the weather is `clear`, and then plot `date` vs your new column.
 1. If you haven't already, try using the pipe (`%>%`) for the exercises in this section.
 
-## Part 4: Bikesharing practice 2
+## Part 3: Bikesharing practice 2
 
 Code from class is available here: https://juliaolivieri.github.io/COMP_162_2024/lecture10.2.html 
 
