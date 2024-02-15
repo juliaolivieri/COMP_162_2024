@@ -88,7 +88,7 @@ Column descriptions:
 `humidity` | Humidity (between 0 and 100)|
 `windspeed` | Wind speed in miles per hour|
 
-### Part 3: Bikesharing practice 1
+## Part 3: Bikesharing practice 1
 
 Code from class is available here: https://juliaolivieri.github.io/COMP_162_2024/lecture10.1.html 
 
@@ -99,4 +99,19 @@ Code from class is available here: https://juliaolivieri.github.io/COMP_162_2024
 1. **(CW) Which of the plots from 5 and 6 is more informative?**
 1. Filter your observations to only days for which the weather is `clear`, and then plot `date` vs your new column.
 1. If you haven't already, try using the pipe (`%>%`) for the exercises in this section.
+
+## Part 4: Bikesharing practice 2
+
+Code from class is available here: https://juliaolivieri.github.io/COMP_162_2024/lecture10.2.html 
+
+1. **(CW) Create a plot of `windspeed` by `season`. Try using `geom_freqpoly()`, `geom_density()`, and `geom_histogram()`. Which visualization do you prefer?**
+1. **(CW) Try filtering these plots to just `fall` and `spring`.**
+1. **(CW) Create a box plot of `windspeed` by `season`. Choose another categorical variable to set `fill` to.**
+1. **(CW) Create a `geom_line()` plot of `temperature_F` vs `date_noyear`. Add smoothing with `geom_smooth()`. Were there big temperature differences between the two years?**
+1. Create a plot of `humidity` by `month`. Try using `geom_freqpoly()`, `geom_density()`, and `geom_histogram()`. Which visualization do you prefer?
+1. Try adding points to the plot above with `geom_jitter()`. Do you prefer the plot with or without these points?
+1. Create a box plot of `humidity` by `month`. Choose a variable to set `fill` to.
+1. Create a `geom_line()` plot of `temperature_F` vs `date_noyear`. Add smoothing with `geom_smooth()`. Were there big temperature differences between the two years?
+1. Create a bar plot showing the frequency of each kind of species in the Star Wars data. Drop rows for which `homeworld` is NA. Only include species that appear more than once in the data. Sort the bars by frequency.
+1. Try using these techniques to visualize relationships in either dataset.
 
