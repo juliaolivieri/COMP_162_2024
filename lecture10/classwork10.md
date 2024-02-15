@@ -90,7 +90,7 @@ Column descriptions:
 
 ### Part 3: Bikesharing practice 1
 
-Code from class is available here: 
+Code from class is available here: https://juliaolivieri.github.io/COMP_162_2024/lecture10.1.html 
 
 1. **(CW) Use `mutate()` to create a new column (perhaps `count/temperature_F`) and plot the new column vs `date` using `geom_points()`**
 1. **(CW) Add labels to a plot using `labs()`**
