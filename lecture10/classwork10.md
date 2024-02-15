@@ -88,4 +88,15 @@ Column descriptions:
 `humidity` | Humidity (between 0 and 100)|
 `windspeed` | Wind speed in miles per hour|
 
+### Part 3: Bikesharing practice 1
+
+Code from class is available here: 
+
+1. **(CW) Use `mutate()` to create a new column (perhaps `count/temperature_F`) and plot the new column vs `date` using `geom_points()`**
+1. **(CW) Add labels to a plot using `labs()`**
+1. **(CW) Create a bar plot of `weather`, determining `fill` by `weekday` (remember to use `position = "dodge"`)**
+1. **(CW) Create a bar plot of `weekday`, determining `fill` by `weather` (remember to use `position = "dodge"`)**
+1. **(CW) Which of the plots from 5 and 6 is more informative?**
+1. Filter your observations to only days for which the weather is `clear`, and then plot `date` vs your new column.
+1. If you haven't already, try using the pipe (`%>%`) for the exercises in this section.
 
