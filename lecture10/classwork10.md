@@ -56,3 +56,36 @@ If you have extra time, try out more sophisticated markdown formatting: https://
 4. Add an inline equation.
 5. Create a bulleted list.
 6. Create a numbered list.
+
+## Part 2: Bike sharing exploration
+1. Download the bike sharing data: https://drive.google.com/file/d/1mXb31YZpPXnDu7PV2KkJ0A5Y_UwCiPaP/view?usp=sharing.
+2. Create a new R Markdown file and load the data in
+3. Load the `tidyverse` library
+4. Create at least one of each of the following types of plots:
+  * `geom_bar()` 
+  * `geom_histogram()` 
+  * `geom_point()` 
+5. Try to find "interesting" relationships between variables
+6. Remember, you can change aesthetic properties such as color, shape, size, and fill
+
+Column descriptions:
+
+| Variable | Description
+---|---
+`season` | Either "winter", "spring", "summer", or "fall"|
+`month` | Month of the year |
+`year` | Year (either 2011 or 2012)|
+`date` | Date|
+`date_noyear` | Date with the year set to 2000 for all entries (so dates can be compared across years)|
+`holiday` | TRUE if the day is a holiday, FALSE otherwise|
+`weekday` | Day of the week|
+`workingday` | TRUE if this is Monday - Friday, FALSE if it's Saturday-Sunday|
+`weather` |Either "clear," "cloudy," or "rainy" |
+`temperature_F` | Temperature in degrees Fahrenheit|
+`casual` | Number of casual (non-registered) riders on the given day|
+`registered` | Number of registered riders on the given day|
+`count` | Number of total riders on the given day|
+`humidity` | Humidity (between 0 and 100)|
+`windspeed` | Wind speed in miles per hour|
+
+
