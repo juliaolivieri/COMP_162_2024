@@ -61,7 +61,7 @@ t.test(count ~ is_cold, data = bike_sharing)
 1. Create a column in the data frame called `is_tall` that is true if `ht` is greater than 180. Perform a t test with `is_tall` as the independent variable and `ferr` as the dependent variable.
 1. For each quantitative variable in the dataset, use a t-test to check whether there's a significant difference in means by sex using `alpha = 0.05`.
 
-## Part 2: Correlation
+## Part 3: Correlation
 
 ### Code from class:
 ```
@@ -95,21 +95,4 @@ pairs(select(bike_sharing, temperature_F, humidity, windspeed, count))
 1. Find the pair of variables with the lowest correlation and a p value of < 0.05.
 1. Try filtering by sex or sport and check how the pairwise correlations change. Do the variables have higher or lower correlations after filtering?
 
-## Part 3: Regression
-
-### Code from class:
-```
-# perform a linear regression with temperature_F as the independent variable and count as the dependent variable
-bike_regression <- lm(count ~ temperature_F, data = bike_sharing)
-
-# summarize the regression output
-summary(bike_regression)
-```
-
-### Exercises
-1. Of height and weight, which do you presume is the independent variable?
-2. **(CW) Perform a linear regression on height and weight. What is the slope of the regression line? What is the p value?**
-3. How do these values change when you reverse the order of the variables?
-4. Try performing linear regressions for the pairs of variables you found correlations for in the previous section.
-5. Plot two quantitative variables against each other. If you use `geom_smooth(method=lm)`, the linear regression line will be plotted. Try this out.
 
