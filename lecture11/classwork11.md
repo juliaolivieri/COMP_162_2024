@@ -36,6 +36,30 @@ bike_sharing %>%
 1. Create a box plot of `humidity` by `month`. Choose a variable to set `fill` to.
 1. Create a `geom_line()` plot of `temperature_F` vs `date_noyear`. Add smoothing with `geom_smooth()`. Were there big temperature differences between the two years?
 
+## Part 2: T tests
+
+### Code from class:
+```
+# perform t test with count as dependent variable, workingday as independent
+t.test(count ~ workingday, data = bike_sharing)
+
+# perform t test with frac_casual as dependent variable, workingday as independent
+bike_sharing <- mutate(bike_sharing, frac_casual = casual/count)
+t.test(frac_casual ~ workingday, data = bike_sharing)
+
+# perform t test with count as dependent variable, is_cold as independent
+bike_sharing <- mutate(bike_sharing, is_cold = temperature_F < 50)
+t.test(count ~ is_cold, data = bike_sharing)
+```
+
+### Exercises
+1. **(CW) Read the following csv into a data frame called `ais` in R: https://drive.google.com/file/d/1WY7MHz3TnBvMPYJXq8UecPrhgAt8krAJ/view?usp=sharing**
+1. **(CW) Perform a t-test using the ais data, with `sex` as the independent variable and `ht` as the dependent variable. Do you detect a difference in mean height by sex?**
+1. **(CW) Perform a t-test using `sex` as the independent variable and `wcc` as the dependent variable. Do you detect a difference in mean wcc by sex?**
+1. Test for a difference in height between rows with `Sport` equal to `B_Ball`, and those with `Sport` equal to `Row`.
+1. Create a column in the data frame called `is_tall` that is true if `ht` is greater than 180. Perform a t test with `is_tall` as the independent variable and `ferr` as the dependent variable.
+1. For each quantitative variable in the dataset, use a t-test to check whether there's a significant difference in means by sex using `alpha = 0.05`.
+
 ## Part 2: Correlation
 
 ### Code from class:
@@ -63,7 +87,6 @@ pairs(select(bike_sharing, temperature_F, humidity, windspeed, count))
 | `sport` | Takes on the following values: `B_Ball`, `Field`, `Gym`, `Netball`, `Row`, `Swim`, `T_400m`, `T_Sprnt`, `Tennis`, `W_Polo`|
 
 ### Exercises
-1. **(CW) Read the following csv into a data frame called `ais` in R: https://drive.google.com/file/d/1WY7MHz3TnBvMPYJXq8UecPrhgAt8krAJ/view?usp=sharing**
 1. **(CW) Find the pair-wise correlation for all quantitative variables using `cor()` (you will need to use `select()` to remove `sex` and `sport`).**
 1. **(CW) Plot the pair-wise scatterplots for all quantitative variables using `pairs()` (you will need to use `select()` to remove `sex` and `sport`).**
 1. **(CW) Based on the correlation matrix, which two variables have the **highest** correlation? Use `cor.test()` to find more details about the correlation of these two variables (what is the p value? What is the confidence interval?)**
