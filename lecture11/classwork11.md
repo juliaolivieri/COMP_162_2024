@@ -28,7 +28,7 @@ bike_sharing %>%
 ### Exercises
 1. **(CW) Load the bike sharing data from last class (https://github.com/juliaolivieri/COMP_162_2024/blob/main/lecture10/classwork10.md).**
 1. **(CW) Create a plot of `windspeed` by `season`. Try using `geom_freqpoly()`, `geom_density()`, and `geom_histogram()`. Which visualization do you prefer?**
-1. **(CW) Create a box plot of `season` vs `count`. Sort the boxes.**
+1. **(CW) Create a box plot of `season` vs `count`. Sort the boxes by `count`.**
 1. Create a box plot of `windspeed` by `season`. Choose another categorical variable to set `fill` to.
 1. Create a `geom_line()` plot of `temperature_F` vs `date_noyear`. Add smoothing with `geom_smooth()`. Were there big temperature differences between the two years?
 1. Create a plot of `humidity` by `month`. Try using `geom_freqpoly()`, `geom_density()`, and `geom_histogram()`. Which visualization do you prefer?
