@@ -26,6 +26,7 @@ bike_sharing %>%
 ```
 
 ### Exercises
+1. **(CW) Open an R Markdown file to use for today's classwork. You will turn in the .html version of this notebook as your submission for the assignment.**
 1. **(CW) Load the bike sharing data from last class (https://github.com/juliaolivieri/COMP_162_2024/blob/main/lecture10/classwork10.md).**
 1. **(CW) Create a plot of `windspeed` by `season`. Try using `geom_freqpoly()`, `geom_density()`, and `geom_histogram()`. Which visualization do you prefer?**
 1. **(CW) Create a box plot of `season` vs `count`. Sort the boxes by `count`.**
