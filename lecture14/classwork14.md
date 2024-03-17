@@ -8,7 +8,7 @@ If you can't find the "Anaconda-Navigator" Application on your computer, you sho
 2. Install Anaconda from the downloaded file. You can choose the default options during the install. Make a note of where Anaconda is getting installed.
 3. Once installation is complete, you should be able to find the "Anaconda-Navigator" application on your computer. If you have trouble with this, try following the instructions here: https://docs.anaconda.com/navigator/getting-started/.
 
-## Launching JupyterLab
+## Launching Jupyter Notebooks
 
 1. Open Anaconda-Navigator.
 1. Click "Launch" in the Jupyter Notebook box. It will launch Jupyter Notebook in your default browser.
