@@ -14,26 +14,26 @@ If you can't find the "Anaconda-Navigator" Application on your computer, you sho
 1. Click "Launch" in the Jupyter Notebook box. It will launch Jupyter Notebook in your default browser.
 1. Navigate to the folder where you want to create a notebook, and choose "New" --> Python 3 (ipykernel) to launch a new notebook.
 1. Rename the notebook by clicking on the current title ("Untitled").
-1. You will submit this file in your classwork assignment for today's class.
+1. **(CW) You will submit this file in your classwork assignment for today's class.**
 
 ## Using a Jupyter Notebook
 
 Each section of a notebook is called a "cell" or a "block."
-1. Create a new Markdown block: To add a new code block, press "+" under the title of your notebook. Choose "Markdown" in the drop-down menu of the same toolbar.
-1. Write something in your Markdown block and format it. To format a text block, press shift-enter, or press the "run" button (the triangle) in the notebook's toolbar, or shift-enter. You can use the same Markdown formatting rules we used for R Markdown (e.g. # for headers).
-1. Create a new code block: To add a new code block, press "+" under the title of your notebook. Make sure "Code" is chosen in the drop-down menu of the same toolbar.
-1. Running a code block is the same process as formatting a text block. Write `print("hello world!")` in your code block, and run it by pressing the "run" button (the triangle) in the notebook's toolbar, or pressing shift-enter. You should see the output "hello world!" below the cell.
-1. Add a new code block, write the code `x = 0` in it, and `print(x)`. Run this code block.
-1. Variables are shared across a whole notebook. Whenever the notebook is restarted, all variable values are lost. Create a code block that adds one to x and prints x: 
+1. **(CW) Create a new Markdown block: To add a new code block, press "+" under the title of your notebook. Choose "Markdown" in the drop-down menu of the same toolbar.**
+1. **(CW) Write something in your Markdown block and format it. To format a text block, press shift-enter, or press the "run" button (the triangle) in the notebook's toolbar, or shift-enter. You can use the same Markdown formatting rules we used for R Markdown (e.g. # for headers).**
+1. **(CW) Create a new code block: To add a new code block, press "+" under the title of your notebook. Make sure "Code" is chosen in the drop-down menu of the same toolbar.**
+1. **(CW) Running a code block is the same process as formatting a text block. Write `print("hello world!")` in your code block, and run it by pressing the "run" button (the triangle) in the notebook's toolbar, or pressing shift-enter. You should see the output "hello world!" below the cell.**
+1. **(CW) Add a new code block, write the code `x = 0` in it, and `print(x)`. Run this code block.**
+1. **(CW) Variables are shared across a whole notebook. Whenever the notebook is restarted, all variable values are lost. Create a code block that adds one to x and prints x:** 
    ```
    x += 1
    print(x)
    ```
 
-   Run it several times in a row. Add a text box below the code block, and in it explain why the value of x changes the way it does as you repeatedly run the block.    
-1. Delete the block where you set `x = 0`: To delete a block in a notebook, click on it and click on the scissors icon in the notebook toolbar.
-1. Whenever you re-open a notebook, all of your variables will be lost. You can "force" this to happen in your current notebook by choosing "Kernel" in the Jupyter Notebook toolbar and choosing "Restart kernel." Try doing this.
-1. Try re-running each block of your notebook. Does an error occur? Why? Try fixing this error.
+   **Run it several times in a row. Add a text box below the code block, and in it explain why the value of x changes the way it does as you repeatedly run the block.**    
+1. **(CW) Delete the block where you set `x = 0`: To delete a block in a notebook, click on it and click on the scissors icon in the notebook toolbar.**
+1. **(CW) Whenever you re-open a notebook, all of your variables will be lost. You can "force" this to happen in your current notebook by choosing "Kernel" in the Jupyter Notebook toolbar and choosing "Restart kernel." Try doing this.**
+1. **(CW) Try re-running each block of your notebook. Does an error occur? Why? Try fixing this error.**
 
 ## Practice with Python
 
@@ -83,14 +83,14 @@ math.sqrt(x)
 | Integer | 3, -1, 12 |
 | Boolean | True, False |
 
-1. Create a code cell and define a variable  using at least three of the operations in the table above. Display its value using one of the methods discussed in class.
-2. Define another variable using at least three of the other operations in the table. Display its value using one of the methods discussed in class.
-3. Find the sum of the two variables you just defined.
-4. Add a comment to your to the code.
-5. Define four different variables, each of a different type (four types with examples are available in the table above). Check that each variable is the correct type with `type()`, e.g. `type(x)`. 
-6. Import the `math` package. 
-7. Take the square root of one of your previously-defined variables using the `sqrt()` function from the math package. Remember, to use a function from a package you have to specify that package, e.g. `math.sqrt(x)`.
-8. (Challenge) The math package also has a function `ceil()` that rounds values to the next-highest integer. Try using it on a "float" value you defined above.
-9. (Challenge) Define the following variables (choose their values yourself): `X1`, `X2`, `t`, `s1`, `s2`, `n1`, `n2`. Write an expression in terms of these variables to calculate the following:
+1. **(CW) Create a code cell and define a variable using at least three of the operations in the table above. Display its value using one of the methods discussed in class.**
+2. **(CW) Define another variable using at least three of the other operations in the table. Display its value using one of the methods discussed in class.**
+3. **(CW) Find the sum of the two variables you just defined.**
+4. **(CW) Add a comment to your to the code.**
+5. **(CW) Define four different variables, each of a different type (four types with examples are available in the table above). Check that each variable is the correct type with `type()`, e.g. `type(x)`.**
+6. **(CW) Import the `math` package.** 
+7. **(CW) Take the square root of one of your previously-defined variables using the `sqrt()` function from the math package. Remember, to use a function from a package you have to specify that package, e.g. `math.sqrt(x)`.**
+8. The math package also has a function `ceil()` that rounds values to the next-highest integer. Try using it on a "float" value you defined above.
+9. Define the following variables (choose their values yourself): `X1`, `X2`, `t`, `s1`, `s2`, `n1`, `n2`. Write an expression in terms of these variables to calculate the following:
    
    $$ (X_1 - X_2) + t\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} $$
