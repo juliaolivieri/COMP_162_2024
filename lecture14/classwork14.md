@@ -84,13 +84,20 @@ math.sqrt(x)
 | Boolean | True, False |
 
 1. **(CW) Create a code cell and define a variable using at least three of the operations in the table above. Display its value using one of the methods discussed in class.**
-2. **(CW) Define another variable using at least three of the other operations in the table. Display its value using one of the methods discussed in class.**
-3. **(CW) Find the sum of the two variables you just defined.**
-4. **(CW) Add a comment to your to the code.**
-5. **(CW) Define four different variables, each of a different type (four types with examples are available in the table above). Check that each variable is the correct type with `type()`, e.g. `type(x)`.**
-6. **(CW) Import the `math` package.** 
-7. **(CW) Take the square root of one of your previously-defined variables using the `sqrt()` function from the math package. Remember, to use a function from a package you have to specify that package, e.g. `math.sqrt(x)`.**
-8. The math package also has a function `ceil()` that rounds values to the next-highest integer. Try using it on a "float" value you defined above.
-9. Define the following variables (choose their values yourself): `X1`, `X2`, `t`, `s1`, `s2`, `n1`, `n2`. Write an expression in terms of these variables to calculate the following:
+1. **(CW) Define another variable using at least three of the other operations in the table. Display its value using one of the methods discussed in class.**
+1. **(CW) Find the sum of the two variables you just defined.**
+1. **(CW) Add a comment to your to the code.**
+1. **(CW) Define four different variables, each of a different type (four types with examples are available in the table above). Check that each variable is the correct type with `type()`, e.g. `type(x)`.**
+1. **(CW) Import the `math` package.** 
+1. **(CW) Take the square root of one of your previously-defined variables using the `sqrt()` function from the math package. Remember, to use a function from a package you have to specify that package, e.g. `math.sqrt(x)`.**
+1. The math package also has a function `ceil()` that rounds values to the next-highest integer. Try using it on a "float" value you defined above.
+1. Define the following variables (choose their values yourself): `X1`, `X2`, `t`, `s1`, `s2`, `n1`, `n2`. Write an expression in terms of these variables to calculate the following:
    
    $$ (X_1 - X_2) + t\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} $$
+
+1. Assign the sum of 1 and -4 as `a`.
+1. Assign the absolute value of `a` as `b` (use the `abs()` function).
+1. Assign `b` minus 1 as `d`.
+1. Test whether `d` is greater than 2. 
+1. The Python Standard Library includes a module random containing a function `randint()`. Given two integers, `randint()` will contain an integer in that range. For example, `randint(1,6)` will return an integer between 1 and 6 (inclusive). Use this function to find a random number between 0 and 36.
+1. (Challenge) What happens when you set a random seed with the `seed()` function before running `randint()`? Why might this function be useful? https://docs.python.org/3/library/random.html 
