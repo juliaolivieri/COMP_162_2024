@@ -95,9 +95,33 @@ math.sqrt(x)
    
    $$ (X_1 - X_2) + t\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} $$
 
+## Extra jupyter notebook practice
 1. Assign the sum of 1 and -4 as `a`.
 1. Assign the absolute value of `a` as `b` (use the `abs()` function).
 1. Assign `b` minus 1 as `d`.
 1. Test whether `d` is greater than 2. 
 1. The Python Standard Library includes a module random containing a function `randint()`. Given two integers, `randint()` will contain an integer in that range. For example, `randint(1,6)` will return an integer between 1 and 6 (inclusive). Use this function to find a random number between 0 and 36.
-1. What happens when you set a random seed with the `seed()` function before running `randint()`? Why might this function be useful? https://docs.python.org/3/library/random.html 
+1. What happens when you set a random seed with the `seed()` function before running `randint()`? Why might this function be useful? https://docs.python.org/3/library/random.html
+
+## Looking ahead: Data and visualization in Python
+
+We will be using pandas, matplotlib, and seaborn to load and visualize data in Python. If you have extra time, you can get a head start on using these tools. 
+
+You can copy this code into your jupyter notebook and run it (try installing the libraries if they are not found). Then see whether you can make different scatterplots with different colorings by switching the columns assigned to `x`, `y`, and `hue`.
+
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# load data from a csv
+iris = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv")
+
+# display the dataframe
+display(iris)
+
+# create a scatterplot 
+sns.relplot(data = iris, x = "sepal_length", y = "sepal_width", hue = "species")
+plt.show()
+```
+
