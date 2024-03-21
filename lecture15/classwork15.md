@@ -20,7 +20,6 @@ R syntax | Python syntax | Description
  
  R syntax | Python syntax | Description
 -- | -- | --
-`typeof(x)` | `type(x)` | Find type of object `x`
  `head(test_df)` | `test_df.head()`| Get the first few lines of a data frame called `test_df`
  `tail(test_df)`| `test_df.tail()`| Get the last few lines of a data frame called `test_df`
  `str(test_df)` | `test_df.info()`| Find column names and data types of data frame called `test_df`
