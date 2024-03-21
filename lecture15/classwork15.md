@@ -15,6 +15,11 @@ Mapping between R and Python commands: https://github.com/juliaolivieri/COMP_162
 #### Code from class
 
 ```
+# read dataframe
+pd.read_csv("taxis.csv")
+
+# write dataframe
+taxis.to_csv("new_taxis.csv", index = False) 
 ``` 
 
 #### Exercises
@@ -22,6 +27,26 @@ Mapping between R and Python commands: https://github.com/juliaolivieri/COMP_162
 ### Descriptive statistics
 
 #### Code from class
+
+```
+# find number of rows and columns
+taxis.shape
+
+# display first 10 rows
+taxis.head(10)
+
+# display last 8 rows
+taxis.tail(8)
+
+# Output summary information about column types
+taxis.info()
+
+# Output summary statistics for each column
+taxis.describe(include = "all")
+
+# Find the frequency of each value of a categorical column
+taxis["payment"].value_counts()
+```
 
 #### Exercises
 
