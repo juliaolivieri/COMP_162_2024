@@ -60,14 +60,23 @@ taxis["payment"].value_counts()
 
 ### Indexing
 
+#### Code from class
+
 ```
+# create dataframe
+animals = pd.DataFrame.from_dict({"species" : ["dog", "cat", "penguin"], 
+                                  "size" : [40, 10, 80], 
+                                  "name" : ["Typo", "Ralph", "Pinky"], 
+                                  "age" : [5, 18, 12]})
 
 # two ways to index into the same value
 animals.iloc[0,0]
 animals.loc[3, "species"]
-```
 
-#### Code from class
+# two ways to index into the same value
+animals.iloc[0:2, 1:4]
+animals.loc[[3, 6],["size", "name", "age"]]
+```
 
 #### Exercises
 
@@ -77,10 +86,34 @@ animals.loc[3, "species"]
 
 #### Code from class
 
+```
+# subset to selected columns
+taxis[[“fare”, “payment”, “pickup_zone”, “pickup_borough”]]
+
+# subset to only rows for which the color is green
+taxis[taxis[“color”] == “green”]
+
+# subset to only rows for which the fare is less than 5
+taxis[taxis[“fare”] < 5]
+
+# sort dataframe by fare
+taxis.sort_values("fare")
+```
+
 #### Exercises
 
 ### Plotting
 
 #### Code from class
+
+```
+# create a histogram for fare
+sns.displot(data = taxis, x = "fare")
+plt.plot()
+
+# create a bar plot for pickup_borough
+sns.displot(data = taxis, x = "pickup_borough")
+plt.plot()
+```
 
 #### Exercises
