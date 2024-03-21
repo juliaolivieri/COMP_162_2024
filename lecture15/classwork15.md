@@ -102,13 +102,13 @@ animals.loc[[3, 6],["size", "name", "age"]]
 
 ```
 # subset to selected columns
-taxis[[“fare”, “payment”, “pickup_zone”, “pickup_borough”]]
+taxis[["fare", "payment", "pickup_zone", "pickup_borough"]]
 
 # subset to only rows for which the color is green
-taxis[taxis[“color”] == “green”]
+taxis[taxis["color"] == "green"]
 
 # subset to only rows for which the fare is less than 5
-taxis[taxis[“fare”] < 5]
+taxis[taxis["fare"] < 5]
 
 # sort dataframe by fare
 taxis.sort_values("fare")
