@@ -24,6 +24,14 @@ taxis.to_csv("new_taxis.csv", index = False)
 
 #### Exercises
 
+1. **(CW) Import the required packages for these exercises:**
+   ```
+   import matplotlib.pyplot as plt
+   import pandas as pd
+   import seaborn as sns
+   ```
+1. 
+
 ### Descriptive statistics
 
 #### Code from class
@@ -51,6 +59,13 @@ taxis["payment"].value_counts()
 #### Exercises
 
 ### Indexing
+
+```
+
+# two ways to index into the same value
+animals.iloc[0,0]
+animals.loc[3, "species"]
+```
 
 #### Code from class
 
