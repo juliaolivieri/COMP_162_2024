@@ -55,12 +55,12 @@ taxis["payment"].value_counts()
 
 #### Exercises
 
-1. Find the number of rows and columns of the penguins dataset.
-1. Display the last 6 rows of the penguins dataset.
-1. Display the mining dataset.
-1. Classify the variables of the penguins dataset. Use `.info()` to help you.
-1. Find summary statistics for each column of the penguins dataset, using the `.describe(include = "all")`  method.
-1. 
+1. **(CW) Find the number of rows and columns of the penguins dataset.** 
+1. **(CW) Display the last 6 rows of the penguins dataset.**
+1. **(CW) Display the mining dataset.**
+1. **(CW) Classify the variables of the penguins dataset. Use `.info()` to help you.**
+1. **(CW) Find summary statistics for each column of the penguins dataset, using the `.describe(include = "all")`  method.**
+1. **(CW) How many penguins of each species are in the datset?**
 
 
 ### Indexing
@@ -84,6 +84,13 @@ animals.loc[[3, 6],["size", "name", "age"]]
 ```
 
 #### Exercises
+
+1. **(CW) Display the mining dataset.**
+1. **(CW) Index into the "pearl" entry using `.iloc[]`**
+1. Index into the "diamond" entry using `.loc[]`
+1. Use `.iloc[]` to subset to a DataFrame only containing gems, and no "rock"
+1. **(CW) Use `.loc[]` to subset to a DataFrame only containing gems, and no "rock"**
+1. Assign an entry to be "topaz" and an entry to be "amethyst" in such a way that you can still index to include all gems and no "rock". Use both methods to index into only the gems in the augmented DataFrame.
 
 ## Part 2
 
