@@ -61,6 +61,7 @@ taxis["payment"].value_counts()
 1. **(CW) Classify the variables of the penguins dataset. Use `.info()` to help you.**
 1. **(CW) Find summary statistics for each column of the penguins dataset, using the `.describe(include = "all")`  method.**
 1. **(CW) How many penguins of each species are in the datset?**
+1. How many penguins are from each island in the dataset?
 
 
 ### Indexing
@@ -91,6 +92,7 @@ animals.loc[[3, 6],["size", "name", "age"]]
 1. Use `.iloc[]` to subset to a DataFrame only containing gems, and no "rock"
 1. **(CW) Use `.loc[]` to subset to a DataFrame only containing gems, and no "rock"**
 1. Assign an entry to be "topaz" and an entry to be "amethyst" in such a way that you can still index to include all gems and no "rock". Use both methods to index into only the gems in the augmented DataFrame.
+1. Translate this R script to a python script up through `summary(taxis)` (so, create a jupyter notebook that performs this same analysis): https://juliaolivieri.github.io/
 
 ## Part 2
 
@@ -122,7 +124,7 @@ taxis.sort_values("fare")
 1. Filter to only rows for which the `bill_length_mm` is less than 40 but the `bill_depth_mm` is greater than 20.
 1. What is the length of the longest bill of an Adelie penguin?
 1. Of the Gentoo penguins, how many are male and how many are female?
-1. Translate this R script to a python script (so, create a jupyter notebook that performs this same analysis): https://juliaolivieri.github.io/
+1. Continue translating this R script into a python script (so, create a jupyter notebook that performs this same analysis): https://juliaolivieri.github.io/
 1. For any of these commands, do you prefer the syntax or output from R rather than Python, or vice versa?
 
 ### Plotting
