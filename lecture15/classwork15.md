@@ -19,8 +19,8 @@ Mapping between R and Python commands: https://github.com/juliaolivieri/COMP_162
 pd.read_csv("taxis.csv")
 
 # write dataframe
-taxis.to_csv("new_taxis.csv", index = False) 
-``` 
+taxis.to_csv("new_taxis.csv", index = False)
+```
 
 #### Exercises
 
