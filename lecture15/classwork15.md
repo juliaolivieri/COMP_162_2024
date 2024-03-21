@@ -118,8 +118,13 @@ taxis.sort_values("fare")
 1. **(CW) Subset the penguins dataframe to only the categorical columns. Save the result as `cat_penguins`.**
 1. **(CW) Subset the penguins dataframe to only rows for which the `bill_depth_mm` is greater than 17. Call this `bigbill_penguins`.**
 1. **(CW) Write the dataframe `bigbill_penguins` to a csv.**
+1. Filter to only rows for which `species` is `Adelie` or `Gentoo`.
+1. Filter to only rows for which the `bill_length_mm` is less than 40 but the `bill_depth_mm` is greater than 20.
+1. What is the length of the longest bill of an Adelie penguin?
+1. Of the Gentoo penguins, how many are male and how many are female?
+1. Translate this R script to a python script (so, create a jupyter notebook that performs this same analysis): https://juliaolivieri.github.io/
+1. For any of these commands, do you prefer the syntax or output from R rather than Python, or vice versa?
 
- 
 ### Plotting
 
 #### Code from class
@@ -137,5 +142,6 @@ plt.plot()
 #### Exercises
 1. **(CW) Create a histogram for each quantitative variable in the penguins dataset**
 1. **(CW) Create a bar chart for each categorical variable in the penguins dataset**
+1. Create a histogram of `bill_length_mm` of Adelie penguins.
 1. There are many different kinds of plots you can make with the `displot()` function. What happens when you use an x and y variable? 
 1. Test out other displot options based on this document: https://seaborn.pydata.org/tutorial/distributions.html 
