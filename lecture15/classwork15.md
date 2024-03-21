@@ -129,3 +129,7 @@ plt.plot()
 ```
 
 #### Exercises
+1. **(CW) Create a histogram for each quantitative variable in the penguins dataset**
+1. **(CW) Create a bar chart for each categorical variable in the penguins dataset**
+1. There are many different kinds of plots you can make with the `displot()` function. What happens when you use an x and y variable? 
+1. Test out other displot options based on this document: https://seaborn.pydata.org/tutorial/distributions.html 
