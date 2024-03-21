@@ -134,11 +134,11 @@ taxis.sort_values("fare")
 ```
 # create a histogram for fare
 sns.displot(data = taxis, x = "fare")
-plt.plot()
+plt.show()
 
 # create a bar plot for pickup_borough
 sns.displot(data = taxis, x = "pickup_borough")
-plt.plot()
+plt.show()
 ```
 
 #### Exercises
