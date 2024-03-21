@@ -16,6 +16,8 @@ R syntax | Python syntax | Description
 
  ### Descriptive Statistics
  
+ R syntax | Python syntax | Description
+-- | -- | --
 `typeof(x)` | `type(x)` | Find type of object `x`
  `head(test_df)` | `test_df.head()`| Get the first few lines of a data frame called `test_df`
  `tail(test_df)`| `test_df.tail()`| Get the last few lines of a data frame called `test_df`
@@ -47,6 +49,6 @@ R syntax | Python syntax | Description
 
 R syntax | Python syntax | Description
 -- | -- | --
-  `ggplot(test_df) + geom_hist(aes(x = col1))` | `sns.displot(data = test_df, x = "col1")` | Create a histogram based on the quantitative column `col1` in the dataframe `test_df` 
-    `ggplot(test_df) + geom_bar(aes(x = col1))` | `sns.displot(data = test_df, x = "col1")` | Create a bar chart based on the categorical column `col1` in the dataframe `test_df` 
+`ggplot(test_df) + geom_hist(aes(x = col1))` | `sns.displot(data = test_df, x = "col1")` | Create a histogram based on the quantitative column `col1` in the dataframe `test_df` 
+`ggplot(test_df) + geom_bar(aes(x = col1))` | `sns.displot(data = test_df, x = "col1")` | Create a bar chart based on the categorical column `col1` in the dataframe `test_df` 
   
