@@ -114,6 +114,12 @@ taxis.sort_values("fare")
 
 #### Exercises
 
+1. **(CW) Sort the penguins dataframe by `bill_length_mm`.**
+1. **(CW) Subset the penguins dataframe to only the categorical columns. Save the result as `cat_penguins`.**
+1. **(CW) Subset the penguins dataframe to only rows for which the `bill_depth_mm` is greater than 17. Call this `bigbill_penguins`.**
+1. **(CW) Write the dataframe `bigbill_penguins` to a csv.**
+
+ 
 ### Plotting
 
 #### Code from class
