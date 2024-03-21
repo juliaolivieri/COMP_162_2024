@@ -24,6 +24,7 @@ R syntax | Python syntax | Description
  `tail(test_df)`| `test_df.tail()`| Get the last few lines of a data frame called `test_df`
  `str(test_df)` | `test_df.info()`| Find column names and data types of data frame called `test_df`
  `summary(test_df)` | `test_df.describe(include = "all")` | Generate summary statistics for data frame columns
+ `table(test_df$count)`| `test_df["color"].value_counts()` | Find the count of each value for categorical variable `"color"` in data frame `test_df`
 
 
 
@@ -43,7 +44,6 @@ R syntax | Python syntax | Description
  `test_df[,c("name", "age", "height")]` | `test_df[["name", "age", "height"]]` | Subset data frame `test_df` to just columns  `"name"`, `"age"`, and `"height"` 
  `filter(test_df, school == "UOP")`| `test_df[test_df["school"] == "UOP"]` | Subset data frame `test_df` to only rows for which `"school"` is equal to `"UOP"`
  `filter(test_df, age > 18)` | `test_df[test_df["age"] > 18]` | Subset data frame `test_df` to only rows for which `"age"` is greater than 18
-  `table(test_df$count)`| `test_df["color"].value_counts()` | Find the count of each value for categorical variable `"color"` in data frame `test_df`
    `arrange(test_df, col1)` | `test_df.sort_values("col1")` | Sort the dataframe `test_df` by the values in column `col1`
 
 ### Plotting
