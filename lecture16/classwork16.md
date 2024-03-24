@@ -19,14 +19,17 @@ The commands in the GitHub from last class might be useful: https://github.com/j
 
 ## Classwork 2
 
+Summarize the information presented in this plot in ~1 sentence.
 <img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_density.png" height="400" />
 
 ## Classwork 3
 
+Summarize the information presented in this plot in ~1 sentence.
 <img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_scatter.png" height="400" />
 
 ## Classwork 4
 
+Summarize the information presented in this plot in ~1 sentence.
 <img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_box.png" height="400" />
 
 ## Classwork 5
