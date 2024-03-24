@@ -19,15 +19,15 @@ The commands in the GitHub from last class might be useful: https://github.com/j
 
 ## Classwork 2
 
-<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_density.png" width="400" />
+<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_density.png" height="400" />
 
 ## Classwork 3
 
-<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_scatter.png" width="400" />
+<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_scatter.png" height="400" />
 
 ## Classwork 4
 
-<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_box.png" width="400" />
+<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_box.png" height="400" />
 
 ## Classwork 5
 
