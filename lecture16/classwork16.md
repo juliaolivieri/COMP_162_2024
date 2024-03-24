@@ -1,6 +1,6 @@
 # Lecture 16 Classwork Questions
 
-## Classwork Part 1
+## Classwork 1
 
 The commands in the GitHub from last class might be useful: https://github.com/juliaolivieri/COMP_162_2024/blob/main/lecture15/python_R_translation.md
 
@@ -16,6 +16,12 @@ The commands in the GitHub from last class might be useful: https://github.com/j
 1. **(CW) Filter the data based on one categorical variable value. Compute summary statistics before and after filtering. Do any of the summary statistics change?**
 1. **(CW) Make at least one plot based on this data using the `displot` function.**
 1. **(CW) Brainstorm at least three plots that would help you understand this data. Which variable(s) are involved? Are they quantitative or categorical?**
+
+## Classwork 2
+
+## Classwork 3
+
+## Classwork 4
 
 ## Classwork 5
 
