@@ -19,6 +19,9 @@ The commands in the GitHub from last class might be useful: https://github.com/j
 
 ## Classwork 2
 
+![example density plot](http://url/to/img.png)
+
+
 ## Classwork 3
 
 ## Classwork 4
