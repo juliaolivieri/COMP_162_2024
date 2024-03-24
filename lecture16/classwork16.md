@@ -19,17 +19,17 @@ The commands in the GitHub from last class might be useful: https://github.com/j
 
 ## Classwork 2
 
-Summarize the information presented in this plot in ~1 sentence.
+**(CW) Summarize the information presented in this plot in ~1 sentence.**
 <img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_density.png" height="400" />
 
 ## Classwork 3
 
-Summarize the information presented in this plot in ~1 sentence.
+**(CW) Summarize the information presented in this plot in ~1 sentence.**
 <img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_scatter.png" height="400" />
 
 ## Classwork 4
 
-Summarize the information presented in this plot in ~1 sentence.
+**(CW) Summarize the information presented in this plot in ~1 sentence.**
 <img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_box.png" height="400" />
 
 ## Classwork 5
@@ -83,14 +83,15 @@ plt.show()
 
 Documentation for functions:
 * `displot`: https://seaborn.pydata.org/generated/seaborn.displot.html
-*  `relplot`: https://seaborn.pydata.org/generated/seaborn.relplot.html
+* `relplot`: https://seaborn.pydata.org/generated/seaborn.relplot.html
 * `catplot`: https://seaborn.pydata.org/generated/seaborn.catplot.html
 
 
-1. Make a plot of a quantitative variable using `displot()`. Set `hue` equal to a categorical variable. Try with `kind = "hist"` and `kind = "kde"`. Which provides a better representation of your data?
-1. Make a plot of a categorical variable vs a quantitative variable using `catplot()`. Set `hue` equal to a categorical variable. Try with `kind` equal to each of the following: `"strip", "swarm", "box", "violin", "boxen", "point", "bar"`. Which provides the best representation of your data?
-1. Make the plots you brainstormed in Classwork 1.
-1. Work on improving one of your plots so that it enhances understanding of the dataset. Save it by including `plt.savefig("my_img.png")` on the line before `plt.show()`. Submit it: https://forms.gle/SFBcSFnZg1i97er57
+1. **(CW) Make a plot of a quantitative variable using `displot()`. Set `hue` equal to a categorical variable. Try with `kind = "hist"` and `kind = "kde"`. Which provides a better representation of your data?**
+1. **(CW) Make a plot of a categorical variable vs a quantitative variable using `catplot()`. Set `hue` equal to a categorical variable. Try with `kind` equal to each of the following: `"strip", "swarm", "box", "violin", "boxen", "point", "bar"`. Which provides the best representation of your data?**
+1. **(CW) Create at least one of the plots you brainstormed in Classwork 1.**
+1. Work on improving one of your plots so that it enhances understanding of the dataset. Save it by including `plt.savefig("my_img.png")` on the line before `plt.show()`.
+1. **(CW) Submit your favorite plot: https://forms.gle/SFBcSFnZg1i97er57**
 
 ## Classwork 6
 
