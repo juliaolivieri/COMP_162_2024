@@ -23,7 +23,11 @@ The commands in the GitHub from last class might be useful: https://github.com/j
 
 ## Classwork 3
 
+<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_scatter.png" width="400" />
+
 ## Classwork 4
+
+<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_box.png" width="400" />
 
 ## Classwork 5
 
