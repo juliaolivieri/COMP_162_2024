@@ -19,9 +19,7 @@ The commands in the GitHub from last class might be useful: https://github.com/j
 
 ## Classwork 2
 
-![example density plot](https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_density.png)
-
-<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_density.png" width="200" />
+<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_density.png" width="400" />
 
 ## Classwork 3
 
