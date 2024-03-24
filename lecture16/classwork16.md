@@ -21,6 +21,7 @@ The commands in the GitHub from last class might be useful: https://github.com/j
 
 ![example density plot](https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_density.png)
 
+<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture16/example_density.png" width="200" />
 
 ## Classwork 3
 
