@@ -1,8 +1,10 @@
 # Lecture 16 Classwork Questions
 
-## Classwork 1
+## Classwork Part 1
 
 The commands in the GitHub from last class might be useful: https://github.com/juliaolivieri/COMP_162_2024/blob/main/lecture15/python_R_translation.md
+
+### Exercises 
 
 1. **(CW) Open a new Jupyter Notebook. This notebook is what you'll turn in for your classwork today.**
 1. **(CW) Import pandas, seaborn, and matplotlib.**
