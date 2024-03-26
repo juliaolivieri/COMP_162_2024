@@ -2,7 +2,11 @@
 
 ## Classwork 1
 
-The commands in the GitHub from last class might be useful: https://github.com/juliaolivieri/COMP_162_2024/blob/main/lecture15/python_R_translation.md
+The commands in the GitHub from last class might be useful: 
+
+https://github.com/juliaolivieri/COMP_162_2024/blob/main/lecture15/classwork15.md
+
+https://github.com/juliaolivieri/COMP_162_2024/blob/main/lecture15/python_R_translation.md
 
 ### Exercises 
 
