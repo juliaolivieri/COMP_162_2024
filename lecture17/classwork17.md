@@ -116,7 +116,7 @@ books = books[books["Publisher"].isin(["Harper Collins", "Penguin Books", "Simon
 1. Are there other columns it would make sense to filter on to clean up the data? Perform more filtering as you see fit.
 1. **(CW)) Create a scatterplot with at least one of the axes log-scaled.**
 
-## Classwork 6
+## Classwork 5
 
 ### Code from class
 
@@ -129,18 +129,22 @@ books["Rated5MinusRated1"] = books["RatingDist5"] - books["RatingDist1"]
 ### Exercises
 
 
-1. Assign a column called ”FracRated5” that’s the fraction of the total ratings (”RatingDistTotal”) that are equal to 5 (”RatingDist5”)
+1. **(CW) Assign a column called ”FracRated5” that’s the fraction of the total ratings (”RatingDistTotal”) that are equal to 5 (”RatingDist5”)**
 1. What happens when you add two columns containing strings? Try adding the ”Authors” and ”Name” columns.
-1. Create a new column of your choosing.
+1. **(CW) Create a new column of your choosing.**
 1. Assign a column called ”OneFiveRating” that’s equal to the average rating for the book if only 1-star and 5-star ratings are considered
 
-## Classwork 7
+## Classwork 6
 
-1. Assign a new variable called “Season” based on the “PublishMonth” column. Let “Season”  be defined as follows:
+1. **(CW) Assign a new variable called “Season” based on the “PublishMonth” column. Let “Season”  be defined as follows:**
       * “Season” equals “Winter”  if “PublishMonth”  equals 1, 2, or 3
       * “Season”  equals “Spring”  if “PublishMonth” equals 4, 5, or 6
       * “Season”  equals “Summer” if “PublishMonth” equals 7, 8, or 9
       * “Season”  equals “Fall”  if “PublishMonth” equals 10, 11, or 12
 1.  Define the following columns:
       * “TimePeriod” based on the “PublishYear” column, with at least 4 categories.
-      * “Popularity” based on the “RatingDistTotal” column, with at least 3 categories. 
+      * “Popularity” based on the “RatingDistTotal” column, with at least 3 categories.
+
+## Classwork 7
+
+**(CW) Create at least one plot or analysis to answer a question you brainstormed above.**
