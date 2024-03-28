@@ -59,7 +59,13 @@ Variable | Description
 `Authors` | The author(s) of the book
 `Rating` | The average rating given to this book (out of 5)
 
-## Importing code from class
+Brainstorm questions to guide your exploratory analysis of this data.
+What might lead to an interesting discovery?
+What are you curious about given the dataset columns we have access to?
+
+## Classwork 3
+
+### Code from class
 
 ```
 import pandas as pd
@@ -70,7 +76,22 @@ import matplotlib.pyplot as plt
 pd.set_option('display.max_colwidth', None)
 ```
 
-## Sorting code from class
+### Exercises
+
+Now that you’ve brainstormed, you can perform a more directed exploratory data analysis.
+Start a new JupyterLab session for today’s class period. 
+Import pandas, seaborn, and matplotlib:
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as sns
+pd.set_option('display.max_colwidth', None)
+
+
+Start creating summary statistics and plots to try to address your questions 
+
+## Classwork 4
+
+### Code from class
 
 ```
 books.sort_values("Rating")
@@ -78,16 +99,55 @@ books.sort_values(["Rating", "PublishYear"])
 books.sort_values(["Rating", "PublishYear"], ascending = False)
 ```
 
-## Filtering code from class
+### Exercises
+
+1. What is the title of the book with the greatest number of pages?
+1. What is the title of the book with the greatest number of ratings?
+1. What is the title of the book with the greatest number of reviews?
+1. Sort the data by “PublishYear” in ascending order, “PublishDay” in descending order, and “RatingDistTotal” in descending order.
+
+
+## Classwork 5
+
+### Code from class
 
 ```
 books = books[(books["PublishYear"] > 1800) & (books["PublishYear"] < 2024)]
 books = books[(books["Language"] == "eng") | (books["Language"] == "en-US") | (books["Language"] == "en-GB") | (books["Language"] == "en-CA")]
 ```
 
-## Creating a new column code from class
+### Exercises
+
+1. Filter books to only rows for which “PublishYear” is between 1800 and 2024 and save as books.
+1. Filter books to only those for which “Language” is “eng”, “en-US”, “en-GB”, or “en-CA” and save as books.
+1. Filter books to only rows for which “pagesNumber” is greater than 0 and less than 20,000 and save as books.
+1. Are there other columns it would make sense to filter on to clean up the data? Perform more filtering as you see fit.
+
+## Classwork 6
+
+### Code from class
 
 ```
 books["RatingsPlusReviews"] = books["RatingDistTotal"] + books["CountsOfReviews"]	
 books["fracRated1"] = books["RatingDist1"]/books["RatingDistTotal"]
 books["Rated5MinusRated1"] = books["RatingDist5"] - books["RatingDist1"]
+```
+
+### Exercises
+
+
+1. Assign a column called ”FracRated5” that’s the fraction of the total ratings (”RatingDistTotal”) that are equal to 5 (”RatingDist5”)
+1. What happens when you add two columns containing strings? Try adding the ”Authors” and ”Name” columns.
+1. Create a new column of your choosing.
+1. Assign a column called ”OneFiveRating” that’s equal to the average rating for the book if only 1-star and 5-star ratings are considered
+
+## Classwork 7
+
+1. Assign a new variable called “Season” based on the “PublishMonth” column. Let “Season”  be defined as follows:
+      “Season” equals “Winter”  if “PublishMonth”  equals 1, 2, or 3
+      “Season”  equals “Spring”  if “PublishMonth” equals 4, 5, or 6
+      “Season”  equals “Summer” if “PublishMonth” equals 7, 8, or 9
+      “Season”  equals “Fall”  if “PublishMonth” equals 10, 11, or 12
+1.  Define the following columns:
+      “TimePeriod” based on the “PublishYear” column, with at least 4 categories.
+      “Popularity” based on the “RatingDistTotal” column, with at least 3 categories. 
