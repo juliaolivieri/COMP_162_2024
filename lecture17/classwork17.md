@@ -59,7 +59,8 @@ Variable | Description
 `Authors` | The author(s) of the book
 `Rating` | The average rating given to this book (out of 5)
 
-Brainstorm questions to guide your exploratory analysis of this data.
+**(CW) Brainstorm questions to guide your exploratory analysis of this data.**
+
 What might lead to an interesting discovery?
 What are you curious about given the dataset columns we have access to?
 
@@ -74,24 +75,12 @@ import matplotlib.pyplot as plt
 
 # Stops columns from being cut off when displayed
 pd.set_option('display.max_colwidth', None)
-```
 
-### Exercises
-
-Now that you’ve brainstormed, you can perform a more directed exploratory data analysis.
-Start creating summary statistics and plots to try to address your questions 
-
-## Classwork 4
-
-### Code from class
-
-```
 # log-scale axis
 sns.relplot(data = books, x = "RatingDistTotal", y = "CountsOfReview")
 plt.xscale("log")
 plt.yscale("log")
 plt.show()
-
 
 books.sort_values("Rating")
 books.sort_values(["Rating", "PublishYear"])
@@ -100,25 +89,27 @@ books.sort_values(["Rating", "PublishYear"], ascending = False)
 
 ### Exercises
 
-1. What is the title of the book with the greatest number of pages?
+1. **(CW) What is the title of the book with the greatest number of pages?**
 1. What is the title of the book with the greatest number of ratings?
 1. What is the title of the book with the greatest number of reviews?
-1. Sort the data by “PublishYear”, “PublishDay”, and “RatingDistTotal” in descending order.
+1. **(CW) Sort the data by “PublishYear”, “PublishDay”, and “RatingDistTotal” in descending order.**
 
 
-## Classwork 5
+## Classwork 4
 
 ### Code from class
 
 ```
-books = books[(books["PublishYear"] > 1800) & (books["PublishYear"] < 2024)]
-books = books[(books["Language"] == "eng") | (books["Language"] == "en-US") | (books["Language"] == "en-GB") | (books["Language"] == "en-CA")]
+books = books[(books["PublishDay"] > 10) & (books["PublishDay"] < 20)]
+
+books = books[(books["Publisher"] == "HarperCollins") | (books["Publisher"] == "Penguin Books") | (books["Publisher"] == "Simon  Schuster")]
+books = books[books["Publisher"].isin(["Harper Collins", "Penguin Books", "Simon  Schuster"])]
 ```
 
 ### Exercises
 
-1. Filter books to only rows for which “PublishYear” is between 1980 and 2024 and save as `books`.
-1. Filter books to only those for which “Language” is “eng”, “en-US”, “en-GB”, or “en-CA” and save as `books`.
+1. **(CW) Filter your dataframe to remove outliers from the “PublishYear” variable, and save the dataframe.**
+1. **(CW) Filter your dataframe based on the “Language” variable: Choose only three languages to include.**
 1. Filter books to only rows for which “pagesNumber” is greater than 0 and less than 20,000 and save as `books`.
 1. Are there other columns it would make sense to filter on to clean up the data? Perform more filtering as you see fit.
 
