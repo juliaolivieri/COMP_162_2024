@@ -117,9 +117,9 @@ books = books[(books["Language"] == "eng") | (books["Language"] == "en-US") | (b
 
 ### Exercises
 
-1. Filter books to only rows for which “PublishYear” is between 1800 and 2024 and save as books.
-1. Filter books to only those for which “Language” is “eng”, “en-US”, “en-GB”, or “en-CA” and save as books.
-1. Filter books to only rows for which “pagesNumber” is greater than 0 and less than 20,000 and save as books.
+1. Filter books to only rows for which “PublishYear” is between 2000 and 2024 and save as `books`.
+1. Filter books to only those for which “Language” is “eng”, “en-US”, “en-GB”, or “en-CA” and save as `books`.
+1. Filter books to only rows for which “pagesNumber” is greater than 0 and less than 20,000 and save as `books`.
 1. Are there other columns it would make sense to filter on to clean up the data? Perform more filtering as you see fit.
 
 ## Classwork 6
