@@ -147,4 +147,6 @@ books["Rated5MinusRated1"] = books["RatingDist5"] - books["RatingDist1"]
 
 ## Classwork 7
 
+Now that we have learned more data manipulation techniques in Python, we can apply them to answer our questions from the beginning. Work on addressing as many of the questions that you brainstormed as you can. The goal is to create an expansive analysis encompassing interesting findings from the dataset.
+
 **(CW) Create at least one plot or analysis to answer a question you brainstormed above.**
