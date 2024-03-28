@@ -76,12 +76,6 @@ import matplotlib.pyplot as plt
 # Stops columns from being cut off when displayed
 pd.set_option('display.max_colwidth', None)
 
-# log-scale axis
-sns.relplot(data = books, x = "RatingDistTotal", y = "CountsOfReview")
-plt.xscale("log")
-plt.yscale("log")
-plt.show()
-
 books.sort_values("Rating")
 books.sort_values(["Rating", "PublishYear"])
 books.sort_values(["Rating", "PublishYear"], ascending = False)
@@ -100,8 +94,16 @@ books.sort_values(["Rating", "PublishYear"], ascending = False)
 ### Code from class
 
 ```
+# log-scale axis
+sns.relplot(data = books, x = "RatingDistTotal", y = "CountsOfReview")
+plt.xscale("log")
+plt.yscale("log")
+plt.show()
+
+# filter quantitative
 books = books[(books["PublishDay"] > 10) & (books["PublishDay"] < 20)]
 
+# filter categorical
 books = books[(books["Publisher"] == "HarperCollins") | (books["Publisher"] == "Penguin Books") | (books["Publisher"] == "Simon  Schuster")]
 books = books[books["Publisher"].isin(["Harper Collins", "Penguin Books", "Simon  Schuster"])]
 ```
@@ -112,6 +114,7 @@ books = books[books["Publisher"].isin(["Harper Collins", "Penguin Books", "Simon
 1. **(CW) Filter your dataframe based on the “Language” variable: Choose only three languages to include.**
 1. Filter books to only rows for which “pagesNumber” is greater than 0 and less than 20,000 and save as `books`.
 1. Are there other columns it would make sense to filter on to clean up the data? Perform more filtering as you see fit.
+1. **(CW)) Create a scatterplot with at least one of the axes log-scaled.**
 
 ## Classwork 6
 
