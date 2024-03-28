@@ -79,14 +79,6 @@ pd.set_option('display.max_colwidth', None)
 ### Exercises
 
 Now that you’ve brainstormed, you can perform a more directed exploratory data analysis.
-Start a new JupyterLab session for today’s class period. 
-Import pandas, seaborn, and matplotlib:
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as sns
-pd.set_option('display.max_colwidth', None)
-
-
 Start creating summary statistics and plots to try to address your questions 
 
 ## Classwork 4
