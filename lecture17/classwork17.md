@@ -124,6 +124,7 @@ books = books[books["Publisher"].isin(["Harper Collins", "Penguin Books", "Simon
 books["RatingsPlusReviews"] = books["RatingDistTotal"] + books["CountsOfReviews"]	
 books["fracRated1"] = books["RatingDist1"]/books["RatingDistTotal"]
 books["Rated5MinusRated1"] = books["RatingDist5"] - books["RatingDist1"]
+books["Penguin"] = ((books["Publisher"] == "Penguin Books") | (books["Publisher"] == "Penguin Classics"))
 ```
 
 ### Exercises
