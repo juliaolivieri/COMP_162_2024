@@ -144,10 +144,10 @@ books["Rated5MinusRated1"] = books["RatingDist5"] - books["RatingDist1"]
 ## Classwork 7
 
 1. Assign a new variable called “Season” based on the “PublishMonth” column. Let “Season”  be defined as follows:
-      “Season” equals “Winter”  if “PublishMonth”  equals 1, 2, or 3
-      “Season”  equals “Spring”  if “PublishMonth” equals 4, 5, or 6
-      “Season”  equals “Summer” if “PublishMonth” equals 7, 8, or 9
-      “Season”  equals “Fall”  if “PublishMonth” equals 10, 11, or 12
+      * “Season” equals “Winter”  if “PublishMonth”  equals 1, 2, or 3
+      * “Season”  equals “Spring”  if “PublishMonth” equals 4, 5, or 6
+      * “Season”  equals “Summer” if “PublishMonth” equals 7, 8, or 9
+      * “Season”  equals “Fall”  if “PublishMonth” equals 10, 11, or 12
 1.  Define the following columns:
       “TimePeriod” based on the “PublishYear” column, with at least 4 categories.
       “Popularity” based on the “RatingDistTotal” column, with at least 3 categories. 
