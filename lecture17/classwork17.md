@@ -103,7 +103,7 @@ books.sort_values(["Rating", "PublishYear"], ascending = False)
 1. What is the title of the book with the greatest number of pages?
 1. What is the title of the book with the greatest number of ratings?
 1. What is the title of the book with the greatest number of reviews?
-1. Sort the data by “PublishYear” in ascending order, “PublishDay” in descending order, and “RatingDistTotal” in descending order.
+1. Sort the data by “PublishYear”, “PublishDay”, and “RatingDistTotal” in descending order.
 
 
 ## Classwork 5
