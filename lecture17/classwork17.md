@@ -94,6 +94,13 @@ Start creating summary statistics and plots to try to address your questions
 ### Code from class
 
 ```
+# log-scale axis
+sns.relplot(data = books, x = "RatingDistTotal", y = "CountsOfReview")
+plt.xscale("log")
+plt.yscale("log")
+plt.show()
+
+
 books.sort_values("Rating")
 books.sort_values(["Rating", "PublishYear"])
 books.sort_values(["Rating", "PublishYear"], ascending = False)
