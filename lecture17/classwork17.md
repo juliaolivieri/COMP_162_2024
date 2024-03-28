@@ -36,7 +36,7 @@ Documentation for functions:
 1. Explore different jointplot "kinds" : `"scatter", "kde", "hist", "reg"`. Which kind is most appropriate for your data?
 
 ## Classwork 2
-The goodreads data set can be downloaded at this link: https://drive.google.com/file/d/1Oqs4GN01e35_6BAfrEPYbfGvUC7ARR5p/view?usp=sharing
+The goodreads data set can be downloaded at this link: https://drive.google.com/file/d/1h8mKao45AnBW5FZkx4b34Lo2jwGjBasH/view?usp=sharing 
 
 Each row corresponds to one book. Column definitions are the following:
 
