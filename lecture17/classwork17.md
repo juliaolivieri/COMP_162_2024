@@ -139,6 +139,17 @@ books["Penguin"] = ((books["Publisher"] == "Penguin Books") | (books["Publisher"
 
 ## Classwork 6
 
+### Code from class
+
+```
+books["Length"] = "tiny"
+books.loc[books["pagesNumber"] > 20, "Length"] = "short"
+books.loc[books["pagesNumber"] > 150, "Length"] = "medium"
+books.loc[books["pagesNumber"] > 400, "Length"] = "long"
+```
+
+### Exercises
+
 1. **(CW) Assign a new variable called “Season” based on the “PublishMonth” column. Let “Season”  be defined as follows:**
       * “Season” equals “Winter”  if “PublishMonth”  equals 1, 2, or 3
       * “Season”  equals “Spring”  if “PublishMonth” equals 4, 5, or 6
