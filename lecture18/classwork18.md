@@ -39,3 +39,9 @@ plt.show()
 1. If a machine learning task involves grouping similar news articles together without prior knowledge of their categories, which type of learning is it?
    * Supervised learning
    * Unsupervised learning
+  
+## Part 3: Linear Regression
+
+`salaries.csv`: https://drive.google.com/file/d/1XMMqvd3p2x8gkc4V0K9_wfHp9KJBK5rJ/view?usp=sharing
+
+`SAT_scores.csv`: https://drive.google.com/file/d/10dzC5BrHOmgrtzJ6PWPgGH08cg-vg4B7/view?usp=sharing
