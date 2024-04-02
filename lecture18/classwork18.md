@@ -100,4 +100,4 @@ pd.DataFrame({"column" : X_test.columns, "coefficient" : reg.coef_[0]}).sort_val
 1. Try training a linear regression model on all of the quantitative variables from the SAT scores dataset (remember to split into train and test set).
 1. Find the score of this model. How does it compare to the score of models trained on a single variable?
 1. Find the coefficients corresponding to each column. Which column has the largest-magnitude coefficient? Smallest-magnitude? Does this breakdown make sense to you?
-1. Download the apple quality dataset: https://drive.google.com/file/d/1MJGf7XJSdrGCy6hKDtvS9rt5HvlevMK6/view?usp=sharing. Decide on a column to use as the dependent variable. Try predicting the dependent variable based on the independent variables. Which 
+1. Download the apple quality dataset: https://drive.google.com/file/d/1MJGf7XJSdrGCy6hKDtvS9rt5HvlevMK6/view?usp=sharing. Decide on a column to use as the dependent variable. Try predicting the dependent variable based on the independent variables. Which independent variables are most useful for predicting the dependent variable?
