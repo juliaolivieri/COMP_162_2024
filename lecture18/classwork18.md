@@ -49,9 +49,7 @@ plt.show()
 ### Code from class
 
 ```
-from sklearn import linear_model
-from sklearn import model_selection
-from sklearn import metrics
+from sklearn import linear_model, model_selection, metrics
 
 reg = linear_model.LinearRegression().fit(salaries[["YearsExperience"]],salaries[["Salary"]])
 
@@ -70,9 +68,7 @@ metrics.mean_squared_error(y_test, y_pred)
 ### Exercises
 1. **(CW) Import all necessary sklearn modules:**
    ```
-   from sklearn import linear_model
-   from sklearn import model_selection
-   from sklearn import metrics
+   from sklearn import linear_model, model_selection, metrics
    ```
 1. **(CW) For the "scores" dataset, "Average Score (SAT Writing)" will be the dependent variable. Choose a column to use as the predictor variable (independent variable).**
 1. **(CW) Split the data into a training and testing set.**
