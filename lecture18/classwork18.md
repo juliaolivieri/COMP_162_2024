@@ -92,7 +92,7 @@ reg = linear_model.LinearRegression().fit(X_train, y_train)
 
 reg.score(X_test, y_test)
 
-pd.DataFrame({"column" : X_test.columns, "coefficient" : reg.coef_[0]}).sort_values("coefficient")
+pd.DataFrame({"column" : X_test.columns, "coefficient" : reg.coef_}).sort_values("coefficient")
 ```
 
 ### Exercises
