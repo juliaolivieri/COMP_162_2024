@@ -26,17 +26,17 @@ plt.show()
 
 ### Exercises
 
-1. What is your current understanding of the term “machine learning”?
-1. If a machine learning task involves predicting the percentage of a student's score in an exam, which type of task is it?
+1. **(CW) What is your current understanding of the term “machine learning”?**
+1. **(CW) If a machine learning task involves predicting the percentage of a student's score in an exam, which type of task is it?**
    * Regression
    * Classification
-1. If a machine learning task involves predicting whether a customer will make a purchase or not, which type of task is it?
+1. **(CW) If a machine learning task involves predicting whether a customer will make a purchase or not, which type of task is it?**
    * Regression
    * Classification
-1. If a machine learning task involves predicting a person's age based on their social media usage, given a dataset with ages and corresponding social media usage data, which type of learning is it?
+1. **(CW) If a machine learning task involves predicting a person's age based on their social media usage, given a dataset with ages and corresponding social media usage data, which type of learning is it?**
    * Supervised learning
    * Unsupervised learning
-1. If a machine learning task involves grouping similar news articles together without prior knowledge of their categories, which type of learning is it?
+1. **(CW) If a machine learning task involves grouping similar news articles together without prior knowledge of their categories, which type of learning is it?**
    * Supervised learning
    * Unsupervised learning
   
@@ -64,17 +64,16 @@ metrics.mean_squared_error(y_test, y_pred)
 ```
 
 ### Exercises
-1. Import all necessary sklearn modules:
+1. **(CW) Import all necessary sklearn modules:**
    ```
    from sklearn import linear_model
    from sklearn import model_selection
    from sklearn import metrics
    ```
-1. For the "scores" dataset, "Average Score (SAT Writing)" will be the dependent variable. Choose a column to use as the predictor variable (independent variable).
-1. Split the data into a training and testing set.
-1. Train a new linear model using the training data.
-1. “Predict” the independent variable from the training set using this model. Use `metrics.r2_score()` and  `metrics.mean_squared_error()` to evaluate the prediction.
-1. “Predict” the independent variable from the testing set using this model. Use `metrics.r2_score()` and  `metrics.mean_squared_error()` to evaluate the prediction.
-1. Which prediction is the most accurate? Least? Does this make sense to you?
+1. **(CW) For the "scores" dataset, "Average Score (SAT Writing)" will be the dependent variable. Choose a column to use as the predictor variable (independent variable).**
+1. **(CW) Split the data into a training and testing set.**
+1. **(CW) Train a new linear model using the training data.**
+1. “Predict” the dependent variable based on the independent variable from the training set using this model. Use `metrics.r2_score()` and  `metrics.mean_squared_error()` to evaluate the prediction.
+1. **(CW) “Predict” the dependent variable based on the independent variable from the test set using this model. Use `metrics.r2_score()` and  `metrics.mean_squared_error()` to evaluate the prediction.**
 1. Try a few different random seeds for the train/test split. How different are your answers?
-1. Which variable provides the most accurate predictions?
+1. **(CW) Try different possible independent variables for the model. Which variable provides the most accurate predictions?**
