@@ -28,5 +28,5 @@ plt.show()
 
 1. What is your current understanding of the term “machine learning”?
 1. If a machine learning task involves predicting the percentage of a student's score in an exam, which type of task is it?
-  a. Regression
-  a. Classification
+   a. Regression
+   a. Classification
