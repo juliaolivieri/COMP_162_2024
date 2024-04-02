@@ -17,10 +17,14 @@ plt.show()
 ### Exercises
 
 1. **(CW) Load the SAT scores dataset into your notebook. Data available here: [https://drive.google.com/file/d/1zxa8ekinJdsucWvtrVmpxazYM8oSo0DA/view?usp=sharing](https://drive.google.com/file/d/10dzC5BrHOmgrtzJ6PWPgGH08cg-vg4B7/view?usp=sharing)**
-1. **(CW) Calculate the Spearman and Pearson correlation matrices.**
+1. **(CW) Calculate the Pearson correlation matrix.**
+1. **(CW) Plot the Pearson correlation matrix.**
 1. **(CW) Which pair of variables have the largest-magnitude positive correlation?**
 1. **(CW) Which pair of variables have the largest-magnitude negative correlation?**
-1. Plot the Spearman and Pearson correlation matrices.
+1. Calculate and plot the Spearman  correlation matrix.
+1. What is your interpretation of this correlation plot?
+   
+<img src="https://raw.githubusercontent.com/juliaolivieri/COMP_162_2024/main/lecture18/corr.png" height="400" />
 
 ## Part 2: Introduction to Machine Learning
 
