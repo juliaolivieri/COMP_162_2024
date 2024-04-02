@@ -16,11 +16,11 @@ plt.show()
 
 ### Exercises
 
-1. **(CW) Load the air quality dataset into your notebook. Data available here: https://drive.google.com/file/d/1zxa8ekinJdsucWvtrVmpxazYM8oSo0DA/view?usp=sharing**
+1. **(CW) Load the SAT scores dataset into your notebook. Data available here: [https://drive.google.com/file/d/1zxa8ekinJdsucWvtrVmpxazYM8oSo0DA/view?usp=sharing](https://drive.google.com/file/d/10dzC5BrHOmgrtzJ6PWPgGH08cg-vg4B7/view?usp=sharing)**
 1. **(CW) Calculate the Spearman and Pearson correlation matrices.**
-1. **(CW) Plot the Spearman and Pearson correlation matrices.**
 1. **(CW) Which pair of variables have the largest-magnitude positive correlation?**
 1. **(CW) Which pair of variables have the largest-magnitude negative correlation?**
+1. Plot the Spearman and Pearson correlation matrices.
 
 ## Part 2: Introduction to Machine Learning
 
@@ -42,6 +42,39 @@ plt.show()
   
 ## Part 3: Linear Regression
 
-`salaries.csv`: https://drive.google.com/file/d/1XMMqvd3p2x8gkc4V0K9_wfHp9KJBK5rJ/view?usp=sharing
+### Code from class
 
-`SAT_scores.csv`: https://drive.google.com/file/d/10dzC5BrHOmgrtzJ6PWPgGH08cg-vg4B7/view?usp=sharing
+```
+from sklearn import linear_model
+from sklearn import model_selection
+from sklearn import metrics
+
+reg = linear_model.LinearRegression().fit(salaries[["YearsExperience"]],salaries[["Salary"]])
+
+print(reg.coef_)
+print(reg.intercept_)
+
+X_train, X_test, y_train, y_test = model_selection.train_test_split(salaries[["YearsExperience"]], salaries[["Salary"]], test_size = 0.2, random_state=1234)
+   
+reg = LinearRegression().fit(X_train, y_train)
+y_pred = reg.predict(X_test)
+   
+metrics.r2_score(y_test, y_pred)
+metrics.mean_squared_error(y_test, y_pred)
+```
+
+### Exercises
+1. Import all necessary sklearn modules:
+   ```
+   from sklearn import linear_model
+   from sklearn import model_selection
+   from sklearn import metrics
+   ```
+1. For the "scores" dataset, "Average Score (SAT Writing)" will be the dependent variable. Choose a column to use as the predictor variable (independent variable).
+1. Split the data into a training and testing set.
+1. Train a new linear model using the training data.
+1. “Predict” the independent variable from the training set using this model. Use `metrics.r2_score()` and  `metrics.mean_squared_error()` to evaluate the prediction.
+1. “Predict” the independent variable from the testing set using this model. Use `metrics.r2_score()` and  `metrics.mean_squared_error()` to evaluate the prediction.
+1. Which prediction is the most accurate? Least? Does this make sense to you?
+1. Try a few different random seeds for the train/test split. How different are your answers?
+1. Which variable provides the most accurate predictions?
