@@ -63,6 +63,8 @@ y_pred = reg.predict(X_test)
    
 metrics.r2_score(y_test, y_pred)
 metrics.mean_squared_error(y_test, y_pred)
+
+reg.score(X_test, y_test)
 ```
 
 ### Exercises
@@ -71,9 +73,31 @@ metrics.mean_squared_error(y_test, y_pred)
    from sklearn import linear_model, model_selection, metrics
    ```
 1. **(CW) For the "scores" dataset, "Average Score (SAT Writing)" will be the dependent variable. Choose a column to use as the predictor variable (independent variable).**
-1. **(CW) Split the data into a training and testing set.**
-1. **(CW) Train a new linear model using the training data.**
-1. “Predict” the dependent variable based on the independent variable from the training set using this model. Use `metrics.r2_score()` and  `metrics.mean_squared_error()` to evaluate the prediction.
-1. **(CW) “Predict” the dependent variable based on the independent variable from the test set using this model. Use `metrics.r2_score()` and  `metrics.mean_squared_error()` to evaluate the prediction.**
+1. **(CW) Split the data into a training and testing set (what fraction of the data will you use for testing?).**
+1. **(CW) Train a linear model using the training data.**
+1. “Predict” the dependent variable based on the independent variable using the training set. Use `metrics.r2_score()` and  `metrics.mean_squared_error()` to evaluate the prediction.
+1. **(CW) “Predict” the dependent variable based on the independent variable using the test set. Use `metrics.r2_score()` and  `metrics.mean_squared_error()` to evaluate the prediction.**
 1. Try a few different random seeds for the train/test split. How different are your answers?
+1. Try training your model based on all of the data rows, rather than splitting it into train/test. How do the metrics compare?
 1. **(CW) Try different possible independent variables for the model. Which variable provides the most accurate predictions?**
+
+## Part 4: Linear regression with multiple independent variables
+
+### Code from class
+
+```
+X_train, X_test, y_train, y_test = model_selection.train_test_split(aq[["CO", "NMHC", "NOx"]], aq[[“O3”]], test_size = 0.2, random_state=123)
+
+reg = linear_model.LinearRegression().fit(X_train, y_train)
+
+reg.score(X_test, y_test)
+
+pd.DataFrame({"column" : X_test.columns, "coefficient" : reg.coef_[0]}).sort_values("coefficient")
+```
+
+### Exercises
+
+1. Try training a linear regression model on all of the quantitative variables from the SAT scores dataset (remember to split into train and test set).
+1. Find the score of this model. How does it compare to the score of models trained on a single variable?
+1. Find the coefficients corresponding to each column. Which column has the largest-magnitude coefficient? Smallest-magnitude? Does this breakdown make sense to you?
+1. Download the apple quality dataset: https://drive.google.com/file/d/1MJGf7XJSdrGCy6hKDtvS9rt5HvlevMK6/view?usp=sharing. Decide on a column to use as the dependent variable. Try predicting the dependent variable based on the independent variables. Which 
