@@ -22,3 +22,11 @@ plt.show()
 1. **(CW) Which pair of variables have the largest-magnitude positive correlation?**
 1. **(CW) Which pair of variables have the largest-magnitude negative correlation?**
 
+## Part 2: Introduction to Machine Learning
+
+### Exercises
+
+1. What is your current understanding of the term “machine learning”?
+1. If a machine learning task involves predicting the percentage of a student's score in an exam, which type of task is it?
+  a. Regression
+  a. Classification
