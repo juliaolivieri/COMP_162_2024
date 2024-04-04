@@ -102,7 +102,7 @@ reg = linear_model.Ridge(alpha = 1).fit(X_train, y_train)
 1. How do the training and test scores compare with the original linear regression model?
 1. **(CW) Train a linear model on the housing data using lasso regression. Find its $R^2$ score and RMSE on the test data.**
 1. Which variable has the largest-magnitude positive coefficient? Negative coefficient?
-1. **(CW) Which variables have coefficients equal to zero?**
+1. Which variables have coefficients equal to zero?
 1. How do the training and test scores compare with the original linear regression model and the ridge regression model?
 1. **(CW) Try modifying the alpha parameter for both of these models. Which model results in the highest accuracy on the test data?**
 1. Create plots to visualize the relationships between `MEDV` and key prediction variables.
