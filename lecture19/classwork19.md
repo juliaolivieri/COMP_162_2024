@@ -1,3 +1,5 @@
+# Classwork 19
+
 ## Part 1: Linear regression with multiple independent variables
 
 ### Code from class
@@ -14,6 +16,11 @@ pd.DataFrame({"column" : X_test.columns, "coefficient" : reg.coef_}).sort_values
 
 ### Exercises
 
+1. If only the first row of annotations are showing up for the correlation plot, try updating your package versions:
+```
+! pip install --upgrade seaborn==0.13.2
+! pip install --upgrade matplotlib==3.8.4
+```
 1. Try training a linear regression model on all of the quantitative variables from the SAT scores dataset (remember to split into train and test set).
 1. Find the score of this model. How does it compare to the score of models trained on a single variable?
 1. Find the coefficients corresponding to each column. Which column has the largest-magnitude coefficient? Smallest-magnitude? Does this breakdown make sense to you?
