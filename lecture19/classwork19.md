@@ -42,7 +42,7 @@ plt.show()
 1. **(CW) Load the Boston Housing data, available here (column descriptions below): https://drive.google.com/file/d/126E1-mxV5J4wtXwCVSF5oOyaaFUgCT9o/view?usp=share_link**
 1. **(CW) Split the data into a train and test set using `model_selection.train_test_split()`. Let the output column be `MEDV` and do not include the column "expensive".**
 1. **(CW) Train a linear regression model on this data.**
-1. **(CW) Find the $$R^2$$ score of this model, as well as the RMSE.**
+1. **(CW) Find the $R^2$ score of this model, as well as the RMSE.**
 1. **(CW) Create a scatterplot of the actual vs predicted values.**
 1. **(CW) Find the coefficients corresponding to each independent variable. Which column has the largest-magnitude coefficient? Smallest-magnitude? Does this breakdown make sense to you?**
 1. What happens if you include the dependent variable in the training set?
@@ -100,7 +100,7 @@ reg = linear_model.Ridge(alpha = 1).fit(X_train, y_train)
 1. **(CW) Train a linear model on the housing data using ridge regression. Find its $R^2$ score and RMSE on the test data.**
 1. Which variable has the largest-magnitude positive coefficient? Negative coefficient?
 1. How do the training and test scores compare with the original linear regression model?
-1. **(CW) Train a linear model on the housing data using lasso regression. Find its $$R^2$$ score and RMSE on the test data.**
+1. **(CW) Train a linear model on the housing data using lasso regression. Find its $R^2$ score and RMSE on the test data.**
 1. Which variable has the largest-magnitude positive coefficient? Negative coefficient?
 1. Which variables have coefficients equal to zero?
 1. How do the training and test scores compare with the original linear regression model and the ridge regression model?
