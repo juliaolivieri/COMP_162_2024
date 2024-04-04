@@ -36,9 +36,6 @@ pd.DataFrame({"column" : X_test.columns, "coefficient" : reg.coef_}).sort_values
 1. **(CW) Find the coefficients corresponding to each independent variable. Which column has the largest-magnitude coefficient? Smallest-magnitude? Does this breakdown make sense to you?**
 1. What happens if you include the dependent variable in the training set?
 1. Try training a model with only a subset of the independent variables. How does the model perform?
-1. Download the apple quality dataset: https://drive.google.com/file/d/1MJGf7XJSdrGCy6hKDtvS9rt5HvlevMK6/view?usp=sharing. Decide on a column to use as the dependent variable. Try predicting the dependent variable based on the independent variables. Which independent variables are most useful for predicting the dependent variable?
-
-
 
 
 Variable | Description
@@ -60,26 +57,6 @@ Variable | Description
 
 ## Classwork 2
 
-Code from class:
-```
-X_train, X_test, y_train, y_test = model_selection.train_test_split(cancer.iloc[:, :-2], cancer[["worst fractal dimension"]], random_state=123)
-
-reg = linear_model.LinearRegression().fit(X_train, y_train)
-
-reg.score(X_test, y_test)
-
-pd.DataFrame({"column" : X_test.columns, "coefficient" : reg.coef_[0]}).sort_values("coefficient")
-``` 
-
-
-1. Split the data into a train and test set using `model_selection.train_test_split()`. Let the output column be `MEDV` and do not include the column "expensive".
-1. Train a linear regression model on this data.
-1. Find the score of the model on the test data and the training data.
-1. Find the coefficients of the model.
-1. Which variables have the largest effect on the prediction?
-1. (Challenge) Try subsetting to only the one or two variables with the largest absolute coefficients and training the model again. How does the score change?
-
-## Classwork 3
 
 1. What does overfitting refer to in the context of machine learning models?
    1. A model that has learned the noise in the training data and performs poorly on unseen data
