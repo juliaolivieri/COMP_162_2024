@@ -5,13 +5,23 @@
 ### Code from class
 
 ```
+# splitting the data
 X_train, X_test, y_train, y_test = model_selection.train_test_split(aq[["CO", "NMHC", "NOx"]], aq[[“O3”]], test_size = 0.2, random_state=123)
 
+# model training
 reg = linear_model.LinearRegression().fit(X_train, y_train)
+
+# model evaluation
+metrics.r2_score(y_test, y_pred)
+metrics.mean_squared_error(y_test, y_pred, squared=False)
 
 reg.score(X_test, y_test)
 
-pd.DataFrame({"column" : X_test.columns, "coefficient" : reg.coef_}).sort_values("coefficient")
+pd.DataFrame({"column" : X_test.columns, "coefficient" : reg.coef_[0]}).sort_values("coefficient")
+
+# model visualization
+plt.scatter(y_pred, y_test)
+plt.show()
 ```
 
 ### Exercises
