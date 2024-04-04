@@ -97,7 +97,7 @@ reg = linear_model.Lasso(alpha = 1).fit(X_train, y_train)
 reg = linear_model.Ridge(alpha = 1).fit(X_train, y_train)
 ```
 
-1. **(CW) Train a linear model on the housing data using ridge regression. Find its $$R^2$$ score and RMSE on the test data.**
+1. **(CW) Train a linear model on the housing data using ridge regression. Find its $R^2$ score and RMSE on the test data.**
 1. Which variable has the largest-magnitude positive coefficient? Negative coefficient?
 1. How do the training and test scores compare with the original linear regression model?
 1. **(CW) Train a linear model on the housing data using lasso regression. Find its $$R^2$$ score and RMSE on the test data.**
