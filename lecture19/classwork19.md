@@ -20,7 +20,7 @@ reg.score(X_test, y_test)
 pd.DataFrame({"column" : X_test.columns, "coefficient" : reg.coef_[0]}).sort_values("coefficient")
 
 # model visualization
-plt.scatter(y_pred, y_test)
+plt.scatter(y_test, y_pred)
 plt.show()
 ```
 
@@ -43,6 +43,7 @@ plt.show()
 1. **(CW) Split the data into a train and test set using `model_selection.train_test_split()`. Let the output column be `MEDV` and do not include the column "expensive".**
 1. **(CW) Train a linear regression model on this data.**
 1. **(CW) Find the $$R^2$$ score of this model, as well as the RMSE.**
+1. **(CW) Create a scatterplot of the actual vs predicted values.**
 1. **(CW) Find the coefficients corresponding to each independent variable. Which column has the largest-magnitude coefficient? Smallest-magnitude? Does this breakdown make sense to you?**
 1. What happens if you include the dependent variable in the training set?
 1. Try training a model with only a subset of the independent variables. How does the model perform?
@@ -68,18 +69,18 @@ Variable | Description
 ## Classwork 2
 
 
-1. What does overfitting refer to in the context of machine learning models?
+1. **(CW) What does overfitting refer to in the context of machine learning models?**
    1. A model that has learned the noise in the training data and performs poorly on unseen data
    1. A model that has not learned enough from the training data and performs poorly on unseen data
-1. What does underfitting refer to in the context of machine learning models?
+1. **(CW) What does underfitting refer to in the context of machine learning models?**
    1. A model that has learned the noise in the training data and performs poorly on unseen data
    1. A model that has not learned enough from the training data and performs poorly on unseen data
-1. How can you detect overfitting in a machine learning model?
+1. **(CW) How can you detect overfitting in a machine learning model?**
    1. The model has a high training accuracy and a low testing accuracy
    1. The model has a low training accuracy and a high testing accuracy
    1. The model has a high training accuracy and a high testing accuracy
    1. The model has a low training accuracy and a low testing accuracy
-1. How can you detect underfitting in a machine learning model?
+1. **(CW) How can you detect underfitting in a machine learning model?**
    1. The model has a high training accuracy and a low testing accuracy
    1. The model has a low training accuracy and a high testing accuracy
    1. The model has a high training accuracy and a high testing accuracy
@@ -96,12 +97,12 @@ reg = linear_model.Lasso(alpha = 1).fit(X_train, y_train)
 reg = linear_model.Ridge(alpha = 1).fit(X_train, y_train)
 ```
 
-1. Train a linear model on the housing data using ridge regression. Find its score on the training and test data.
+1. **(CW) Train a linear model on the housing data using ridge regression. Find its $$R^2$$ score and RMSE on the test data.**
 1. Which variable has the largest-magnitude positive coefficient? Negative coefficient?
 1. How do the training and test scores compare with the original linear regression model?
-1. Train a linear model on the housing data using lasso regression. Find its score on the training and test data.
+1. **(CW) Train a linear model on the housing data using lasso regression. Find its $$R^2$$ score and RMSE on the test data.**
 1. Which variable has the largest-magnitude positive coefficient? Negative coefficient?
 1. Which variables have coefficients equal to zero?
 1. How do the training and test scores compare with the original linear regression model and the ridge regression model?
-1. Try modifying the alpha parameter for both of these models. Which model results in the highest accuracy on the test data?
-1. (Challenge) Create plots to visualize the relationships between `MEDV` and key prediction variables.
+1. **(CW) Try modifying the alpha parameter for both of these models. Which model results in the highest accuracy on the test data?**
+1. Create plots to visualize the relationships between `MEDV` and key prediction variables.
