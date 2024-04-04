@@ -92,8 +92,8 @@ Code from class:
 reg = linear_model.Ridge().fit(X_train, y_train)
 reg = linear_model.Lasso().fit(X_train, y_train)
 
-reg = linear_model.Lasso(alpha = 0.1).fit(X_train, y_train)
-reg = linear_model.Ridge(alpha = 0.1).fit(X_train, y_train)
+reg = linear_model.Lasso(alpha = 1).fit(X_train, y_train)
+reg = linear_model.Ridge(alpha = 1).fit(X_train, y_train)
 ```
 
 1. Train a linear model on the housing data using ridge regression. Find its score on the training and test data.
