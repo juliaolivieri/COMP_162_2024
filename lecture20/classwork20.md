@@ -12,7 +12,10 @@ reg.score(X_train, y_train)
 reg.score(X_test, y_test)
 
 y_pred = reg.predict(X_test)
-metrics.confusion_matrix(y_test, y_pred)
+
+labels = np.unique(y_test)
+cm = metrics.confusion_matrix(y_test, y_pred, labels = np.unique(y_test))
+pd.DataFrame(cm, index = labels, columns = labels)
 ```
 
 The GitHub from last class is available here: https://github.com/juliaolivieri/COMP_162_2024/blob/main/lecture19/classwork19.md 
@@ -21,6 +24,7 @@ The GitHub from last class is available here: https://github.com/juliaolivieri/C
 1. **(CW) Load in the required libraries:**
    ```
    import matplotlib.pyplot as plt
+   import numpy as np
    import pandas as pd
    import seaborn as sns
    
