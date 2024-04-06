@@ -131,17 +131,20 @@ dbscan.labels_
 
 1. **(CW) Run the following code to perform DBSCAN clustering on each of these toy datasets, and plot the result:**
    ```
-   dbscan = cluster.DBSCAN(eps = 1, min_samples = 5).fit(blob[[0, 1]])
+   eps = 1
+   min_samples = 5
+   
+   dbscan = cluster.DBSCAN(eps = eps, min_samples = min_samples).fit(blob[[0, 1]])
    blob["dbscan"] = dbscan.labels_
    sns.relplot(data = blob, x = 0, y = 1, hue = "dbscan")
    plt.show()
-
-   dbscan = cluster.DBSCAN(eps = 0.3, min_samples = 5).fit(circles[[0, 1]])
+   
+   dbscan = cluster.DBSCAN(eps = eps, min_samples = min_samples).fit(circles[[0, 1]])
    circles["dbscan"] = dbscan.labels_
    sns.relplot(data = circles, x = 0, y = 1, hue = "dbscan")
    plt.show()
-
-   dbscan = cluster.DBSCAN(eps = 0.3, min_samples = 5).fit(moons[[0, 1]])
+   
+   dbscan = cluster.DBSCAN(eps = eps, min_samples = min_samples).fit(moons[[0, 1]])
    moons["dbscan"] = dbscan.labels_
    sns.relplot(data = moons, x = 0, y = 1, hue = "dbscan")
    plt.show()
