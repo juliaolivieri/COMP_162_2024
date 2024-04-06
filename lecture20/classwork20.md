@@ -66,17 +66,19 @@ kmeans.predict(X)
    ```
 1. **(CW) Run the following code to perform k-means clustering on each of these toy datasets, and plot the result:**
    ```
-   kmeans = cluster.KMeans(n_clusters=3).fit(blob[[0, 1]])
+   n_clusters = 2
+   
+   kmeans = cluster.KMeans(n_clusters=n_clusters).fit(blob[[0, 1]])
    blob["kmeans_3"] = kmeans.labels_
    sns.relplot(data = blob, x = 0, y = 1, hue = "kmeans_3")
    plt.show()
-
-   kmeans = cluster.KMeans(n_clusters=2).fit(circles[[0, 1]])
+   
+   kmeans = cluster.KMeans(n_clusters=n_clusters).fit(circles[[0, 1]])
    circles["kmeans_2"] = kmeans.labels_
    sns.relplot(data = circles, x = 0, y = 1, hue = "kmeans_2")
    plt.show()
-
-   kmeans = cluster.KMeans(n_clusters=2).fit(moons[[0, 1]])
+   
+   kmeans = cluster.KMeans(n_clusters=n_clusters).fit(moons[[0, 1]])
    moons["kmeans_2"] = kmeans.labels_
    sns.relplot(data = moons, x = 0, y = 1, hue = "kmeans_2")
    plt.show()
