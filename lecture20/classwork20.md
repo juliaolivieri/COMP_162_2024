@@ -23,7 +23,7 @@ The GitHub from last class is available here: https://github.com/juliaolivieri/C
    import pandas as pd
    import seaborn as sns
    
-   from sklearn cluster, datasets, metrics, model_selection, linear_model
+   from sklearn import cluster, datasets, metrics, model_selection, linear_model
    ```
 1. **(CW) Load the housing dataset from last time (https://drive.google.com/file/d/126E1-mxV5J4wtXwCVSF5oOyaaFUgCT9o/view?usp=sharing) and split it into training and test data.**
 1. **(CW) Train a logistic regression model on this dataset, using every column except `MEDV` and `expensive` as your input, and `expensive` as the output.**
