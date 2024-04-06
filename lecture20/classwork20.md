@@ -12,9 +12,10 @@ reg.score(X_train, y_train)
 reg.score(X_test, y_test)
 
 y_pred = reg.predict(X_test)
+metrics.accuracy_score(y_test, y_pred)
 
 labels = np.unique(y_test)
-cm = metrics.confusion_matrix(y_test, y_pred, labels = np.unique(y_test))
+cm = metrics.confusion_matrix(y_test, y_pred, labels = labels)
 pd.DataFrame(cm, index = labels, columns = labels)
 ```
 
