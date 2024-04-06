@@ -4,7 +4,7 @@
 
 Code from class:
 ```
-X_train, X_test, y_train, y_test = model_selection.train_test_split(cancer.iloc[:,:-2], cancer[["benign"]], random_state = 123)
+X_train, X_test, y_train, y_test = model_selection.train_test_split(cancer.iloc[:,:-1], cancer[["benign"]], test_size = 0.2, random_state = 123)
 
 reg = linear_model.LogisticRegression().fit(X_train, y_train)
 
