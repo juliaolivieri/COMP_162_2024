@@ -112,11 +112,12 @@ agg.labels_
 ## Classwork 4
 
 Code from class:
+
 ```
 dbscan = DBSCAN(eps = 1).fit(X)
 
 dbscan.labels_
-``
+```
 
 1. **(CW) Run the following code to perform k-means clustering on each of these toy datasets, and plot the result:**
    ```
