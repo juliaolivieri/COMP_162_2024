@@ -97,17 +97,20 @@ agg.labels_
 
 1. **(CW) Run the following code to perform agglomerative clustering on each of these toy datasets, and plot the result:**
    ```
-   agg = cluster.AgglomerativeClustering(n_clusters=3, linkage = "ward").fit(blob[[0, 1]])
+   n_clusters = 2
+   linkage = "ward"
+   
+   agg = cluster.AgglomerativeClustering(n_clusters=n_clusters, linkage = linkage).fit(blob[[0, 1]])
    blob["agg_3"] = agg.labels_
    sns.relplot(data = blob, x = 0, y = 1, hue = "agg_3")
    plt.show()
-
-   agg = cluster.AgglomerativeClustering(n_clusters=2, linkage = "ward").fit(circles[[0, 1]])
+   
+   agg = cluster.AgglomerativeClustering(n_clusters=n_clusters, linkage = linkage).fit(circles[[0, 1]])
    circles["agg_2"] = agg.labels_
    sns.relplot(data = circles, x = 0, y = 1, hue = "agg_2")
    plt.show()
-
-   agg = cluster.AgglomerativeClustering(n_clusters=2, linkage = "ward").fit(moons[[0, 1]])
+   
+   agg = cluster.AgglomerativeClustering(n_clusters=n_clusters, linkage = linkage).fit(moons[[0, 1]])
    moons["agg_2"] = agg.labels_
    sns.relplot(data = moons, x = 0, y = 1, hue = "agg_2")
    plt.show()
@@ -126,7 +129,7 @@ dbscan = DBSCAN(eps = 1).fit(X)
 dbscan.labels_
 ```
 
-1. **(CW) Run the following code to perform k-means clustering on each of these toy datasets, and plot the result:**
+1. **(CW) Run the following code to perform DBSCAN clustering on each of these toy datasets, and plot the result:**
    ```
    dbscan = cluster.DBSCAN(eps = 1, min_samples = 5).fit(blob[[0, 1]])
    blob["dbscan"] = dbscan.labels_
