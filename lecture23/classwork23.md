@@ -4,6 +4,8 @@
 
 See the "Google sheets directions" file on Canvas if you need a reminder.
 
+Choose a dataset from this spreadsheet: https://docs.google.com/spreadsheets/d/198qYRUVPZBaK6_kkl4QFDI69V7xFQpE8SeXdD4sQYGk/edit?usp=sharing 
+
 1. **(CW) Copy the dataset you choose to your own google drive: File → Make a copy.**
 1. **(CW) Create summary statistics for your data using XLMiner Analysis ToolPak.**
 1. **(CW) Create at least one two-way pivot table of your data.**
